@@ -17,11 +17,11 @@
 
 #pragma once
 
+#include <boost/scoped_array.hpp>
+#include <boost/smart_ptr/scoped_array.hpp>
 #include <cstring>
 #include <iosfwd>
 #include <string>
-
-#include <boost/scoped_array.hpp>
 
 namespace mongo {
     namespace base64 {

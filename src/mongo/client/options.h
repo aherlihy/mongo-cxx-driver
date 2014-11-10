@@ -15,8 +15,12 @@
 
 #pragma once
 
+#include <boost/function/function_template.hpp>
+#include <iosfwd>
+#include <memory>
 #include <string>
 
+#include "logger/log_severity.h"
 #include "mongo/client/export_macros.h"
 #include "mongo/logger/log_domain.h"
 #include "mongo/logger/message_log_domain.h"

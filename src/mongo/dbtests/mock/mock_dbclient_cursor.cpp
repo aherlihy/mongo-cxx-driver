@@ -15,11 +15,13 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
-
+#include "client/dbclientcursor.h"
+#include "client/dbclientmockcursor.h"
 #include "mongo/dbtests/mock/mock_dbclient_cursor.h"
 
 namespace mongo {
+class DBClientBase;
+
     MockDBClientCursor::MockDBClientCursor(mongo::DBClientBase* client,
             const mongo::BSONArray& resultSet):
         mongo::DBClientCursor(client, "", 0, 0, 0, 0) {

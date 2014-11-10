@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+struct pollfd;
+
 #pragma once
 
 #ifndef _WIN32

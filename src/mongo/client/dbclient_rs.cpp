@@ -15,20 +15,45 @@
 
 #define MONGO_LOG_DEFAULT_COMPONENT ::mongo::logger::LogComponent::kNetworking
 
-#include "mongo/platform/basic.h"
-
-#include "mongo/client/dbclient_rs.h"
-
+#include <string.h>
+#include <__functional_base>
+#include <__tree>
 #include <memory>
+#include <ostream>
+#include <set>
+#include <string>
+#include <utility>
 
+#include "base/error_codes.h"
+#include "base/status.h"
+#include "base/status-inl.h"
+#include "base/string_data.h"
+#include "bson/bson_field.h"
+#include "bson/bson-inl.h"
+#include "bson/bsonelement.h"
+#include "bson/bsonmisc.h"
+#include "bson/bsonobjbuilder.h"
+#include "bson/bsontypes.h"
+#include "client/dbclientinterface.h"
+#include "logger/log_component.h"
+#include "logger/logstream_builder.h"
 #include "mongo/bson/util/builder.h"
+#include "mongo/client/dbclient_rs.h"
 #include "mongo/client/dbclientcursor.h"
 #include "mongo/client/replica_set_monitor.h"
 #include "mongo/client/sasl_client_authenticate.h"
 #include "mongo/db/dbmessage.h"
-#include "mongo/db/jsobj.h"
 #include "mongo/util/debug_util.h"
 #include "mongo/util/log.h"
+#include "util/assert_util.h"
+#include "util/mongoutils/str.h"
+#include "util/net/hostandport.h"
+#include "util/net/message.h"
+#include "util/net/operation.h"
+
+namespace mongo {
+class WriteConcern;
+}  // namespace mongo
 
 namespace mongo {
 

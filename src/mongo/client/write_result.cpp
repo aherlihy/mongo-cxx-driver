@@ -13,13 +13,17 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
+#include <iosfwd>
 
-#include "mongo/client/write_result.h"
-
+#include "base/string_data.h"
+#include "bson/bsonelement.h"
+#include "bson/bsonobjbuilder.h"
+#include "bson/bsonobjiterator.h"
 #include "mongo/client/exceptions.h"
 #include "mongo/client/write_operation.h"
-#include "mongo/db/jsobj.h"
+#include "mongo/client/write_result.h"
+#include "util/assert_util.h"
+#include "util/net/operation.h"
 
 namespace mongo {
 

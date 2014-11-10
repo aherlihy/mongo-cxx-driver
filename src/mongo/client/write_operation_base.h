@@ -15,8 +15,9 @@
 
 #pragma once
 
-#include "mongo/client/write_operation.h"
+#include <stddef.h>
 
+#include "mongo/client/write_operation.h"
 #include "mongo/platform/cstdint.h"
 
 namespace mongo {

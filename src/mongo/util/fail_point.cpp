@@ -17,11 +17,16 @@
 
 #include "mongo/util/fail_point.h"
 
-#include <boost/thread/locks.hpp>
+#include <boost/thread/lock_guard.hpp>
+#include <ostream>
 
-#include "mongo/util/mongoutils/str.h"
+#include "bson/bsonobjbuilder.h"
+#include "logger/log_component.h"
+#include "logger/logstream_builder.h"
 #include "mongo/util/log.h"
+#include "mongo/util/mongoutils/str.h"
 #include "mongo/util/time_support.h"
+#include "util/assert_util.h"
 
 using mongoutils::str::stream;
 

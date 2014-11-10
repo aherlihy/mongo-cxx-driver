@@ -16,10 +16,16 @@
 #pragma once
 
 #include <boost/shared_ptr.hpp>
+#include <boost/smart_ptr/shared_ptr.hpp>
 #include <boost/thread/mutex.hpp>
+#include <boost/thread/pthread/mutex.hpp>
+#include <stddef.h>
+#include <iosfwd>
 #include <string>
+#include <unordered_map>
 #include <vector>
 
+#include "bson/bsonobj.h"
 #include "mongo/bson/bson_field.h"
 #include "mongo/bson/bsonobjbuilder.h"
 #include "mongo/client/dbclientinterface.h"

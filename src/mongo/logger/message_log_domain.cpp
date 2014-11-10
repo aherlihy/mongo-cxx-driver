@@ -13,14 +13,14 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
-
+#include "client/export_macros.h"
+#include "logger/log_domain.h"
 #include "mongo/logger/message_log_domain.h"
-
-#include "mongo/logger/log_domain-impl.h"
 
 namespace mongo {
 namespace logger {
+
+class MessageEventEphemeral;
 
     template class MONGO_CLIENT_API LogDomain<MessageEventEphemeral>;
 

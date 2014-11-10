@@ -15,11 +15,17 @@
 
 #pragma once
 
+#include <stddef.h>
+#include <sys/_types/_int32_t.h>
 #include <bitset>
+#include <iosfwd>
 #include <string>
 
+#include "base/string_data.h"
+#include "bson/bsonobj.h"
 #include "mongo/client/export_macros.h"
 #include "mongo/db/jsobj.h"
+#include "platform/cstdint.h"
 
 namespace mongo {
 

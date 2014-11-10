@@ -17,19 +17,14 @@
 
 #include "mongo/platform/random.h"
 
-#include <stdio.h>
 #include <string.h>
-
-#ifndef _WIN32
-#include <errno.h>
-#endif
+#include <sys/errno.h>
 
 #define _CRT_RAND_S
 #include <cstdlib>
 #include <iostream>
-#include <fstream>
 
-#include "mongo/platform/basic.h"
+#include "platform/cstdint.h"
 
 namespace mongo {
 

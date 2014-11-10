@@ -13,14 +13,23 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
+#include <string>
 
-#include "mongo/dbtests/mock/mock_dbclient_connection.h"
-
+#include "bson/bsonobj.h"
+#include "client/dbclientcursor.h"
+#include "client/dbclientinterface.h"
+#include "dbtests/mock/mock_remote_db_server.h"
 #include "mongo/client/write_options.h"
+#include "mongo/dbtests/mock/mock_dbclient_connection.h"
 #include "mongo/dbtests/mock/mock_dbclient_cursor.h"
-#include "mongo/util/net/sock.h"
 #include "mongo/util/time_support.h"
+#include "util/assert_util.h"
+
+namespace mongo {
+class Message;
+class SocketException;
+class WriteConcern;
+}  // namespace mongo
 
 using mongo::BSONObj;
 

@@ -15,7 +15,14 @@
 
 #pragma once
 
+#include <_types/_uint32_t.h>
+#include <stddef.h>
+#include <sys/_types/_int64_t.h>
+#include <cstdint>
+#include <cstring>
+#include <functional>
 #include <iosfwd>
+#include <memory>
 #include <string>
 
 #ifndef _WIN32

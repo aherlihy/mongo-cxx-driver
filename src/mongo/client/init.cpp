@@ -15,20 +15,27 @@
 
 #define MONGO_LOG_DEFAULT_COMPONENT ::mongo::logger::LogComponent::kDefault;
 
-#include "mongo/platform/basic.h"
-
-#include "mongo/client/init.h"
-
+#include <boost/function/function_template.hpp>
 #include <cstdlib>
+#include <ostream>
 
+#include "base/error_codes.h"
+#include "base/status.h"
+#include "client/options.h"
+#include "logger/appender.h"
+#include "logger/component_message_log_domain.h"
+#include "logger/log_component.h"
+#include "logger/log_manager.h"
+#include "logger/logger.h"
+#include "logger/logstream_builder.h"
 #include "mongo/base/initializer.h"
+#include "mongo/client/init.h"
 #include "mongo/client/private/options.h"
 #include "mongo/client/replica_set_monitor.h"
-#include "mongo/platform/atomic_word.h"
-#include "mongo/stdx/functional.h"
-#include "mongo/util/background.h"
 #include "mongo/util/log.h"
 #include "mongo/util/net/sock.h"
+#include "platform/atomic_word_intrinsics.h"
+#include "util/assert_util.h"
 
 namespace mongo {
 namespace client {

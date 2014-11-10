@@ -15,7 +15,8 @@
 
 #include "mongo/base/string_data.h"
 
-#include <ostream>
+#include <_types/_uint32_t.h>
+#include <_types/_uint64_t.h>
 #include <third_party/murmurhash3/MurmurHash3.h>
 
 namespace mongo {

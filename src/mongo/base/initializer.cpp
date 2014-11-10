@@ -15,9 +15,24 @@
 
 #include "mongo/base/initializer.h"
 
+#include <boost/function/function_template.hpp>
+#include <stddef.h>
+#include <stdlib.h>
+#include <string.h>
+#include <algorithm>
 #include <iostream>
-#include "mongo/util/assert_util.h"
+#include <map>
+#include <string>
+#include <vector>
+
+#include "base/error_codes.h"
+#include "base/initializer_context.h"
+#include "base/initializer_dependency_graph.h"
+#include "base/initializer_function.h"
+#include "base/status.h"
+#include "base/status-inl.h"
 #include "mongo/base/global_initializer.h"
+#include "mongo/util/assert_util.h"
 
 namespace mongo {
 
@@ -37,12 +52,10 @@ namespace mongo {
  * Sorry for the hack...
  */
 #define INSTALL_FUNCTION(NAME) void _mongoInitializerFunctionAssure_##NAME();
-#include "mongo/base/initializer_functions.h"
 #undef INSTALL_FUNCTION
 
     void (* _mongoGlobalInitializers [])() = {
 #define INSTALL_FUNCTION(NAME) &(_mongoInitializerFunctionAssure_##NAME),
-#include "mongo/base/initializer_functions.h"
 #undef INSTALL_FUNCTION
     NULL
     };

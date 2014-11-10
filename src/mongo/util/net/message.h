@@ -17,16 +17,28 @@
 
 #pragma once
 
+#include <_types/_uint32_t.h>
+#include <boost/static_assert.hpp>
+#include <stddef.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/_types/_int32_t.h>
+#include <sys/_types/_int64_t.h>
+#include <cstdint>
+#include <iosfwd>
+#include <utility>
 #include <vector>
 
-#include "mongo/platform/atomic_word.h"
-#include "mongo/platform/cstdint.h"
+#include "bson/util/builder.h"
 #include "mongo/base/data_view.h"
 #include "mongo/base/encoded_value_storage.h"
+#include "mongo/platform/atomic_word.h"
+#include "mongo/platform/cstdint.h"
 #include "mongo/util/mongoutils/str.h"
 #include "mongo/util/net/hostandport.h"
 #include "mongo/util/net/operation.h"
 #include "mongo/util/net/sock.h"
+#include "util/assert_util.h"
 
 namespace mongo {
 

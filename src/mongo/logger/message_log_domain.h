@@ -20,8 +20,16 @@
 #include <string>
 #include <vector>
 
+#include "base/disallow_copying.h"
+#include "base/status-inl.h"
 #include "mongo/logger/log_domain.h"
 #include "mongo/logger/message_event.h"
+
+namespace mongo {
+namespace logger {
+class MessageEventEphemeral;
+}  // namespace logger
+}  // namespace mongo
 
 namespace mongo {
 namespace logger {

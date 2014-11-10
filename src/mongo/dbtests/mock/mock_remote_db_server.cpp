@@ -13,14 +13,19 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
+#include <boost/thread/lock_guard.hpp>
 
+#include "bson/bson_field.h"
+#include "bson/bsonelement.h"
+#include "bson/bsonmisc.h"
+#include "bson/bsonobjbuilder.h"
+#include "bson/bsontypes.h"
+#include "client/dbclientinterface.h"
 #include "mongo/dbtests/mock/mock_remote_db_server.h"
-
-#include "mongo/dbtests/mock/mock_dbclient_connection.h"
 #include "mongo/util/mongoutils/str.h"
 #include "mongo/util/net/sock.h"
 #include "mongo/util/time_support.h"
+#include "util/assert_util.h"
 
 using std::string;
 using std::vector;

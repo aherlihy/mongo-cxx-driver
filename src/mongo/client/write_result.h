@@ -17,13 +17,14 @@
 
 #include <vector>
 
+#include "bson/bsonobj.h"
 #include "mongo/client/export_macros.h"
 #include "mongo/util/net/operation.h"
 
 namespace mongo {
 
-    class BSONObj;
     class BSONElement;
+    class BSONObj;
     class StringData;
     class WriteOperation;
 

@@ -17,14 +17,22 @@
 
 #pragma once
 
-#include "mongo/config.h"
-
+#include <_types/_uint64_t.h>
+#include <boost/core/noncopyable.hpp>
 #include <boost/shared_ptr.hpp>
+#include <boost/smart_ptr/shared_ptr.hpp>
 #include <boost/utility.hpp>
+#include <iosfwd>
+#include <utility>
 #include <vector>
 
+#include "logger/log_severity.h"
+#include "logger/log_severity-inl.h"
+#include "mongo/config.h"
 #include "mongo/util/net/message.h"
 #include "mongo/util/net/sock.h"
+#include "platform/cstdint.h"
+#include "util/net/hostandport.h"
 
 namespace mongo {
 

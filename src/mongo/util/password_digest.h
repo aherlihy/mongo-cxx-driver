@@ -15,6 +15,7 @@
 
 #pragma once
 
+#include <iosfwd>
 #include <string>
 
 #include "mongo/base/string_data.h"

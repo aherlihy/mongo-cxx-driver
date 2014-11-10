@@ -15,9 +15,13 @@
 
 #pragma once
 
+#include <stddef.h>
+#include <cstring>
 #include <iosfwd>
+#include <memory>
 #include <string>
 
+#include "client/export_macros.h"
 #include "mongo/bson/util/builder.h"
 #include "mongo/platform/hash_namespace.h"
 

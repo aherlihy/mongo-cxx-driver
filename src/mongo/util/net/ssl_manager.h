@@ -15,17 +15,18 @@
 
 #pragma once
 
-#include "mongo/config.h"
-
+#include <iosfwd>
 #include <string>
+
+#include "mongo/config.h"
 
 #ifdef MONGO_SSL
 
-#include "mongo/base/disallow_copying.h"
-#include "mongo/util/net/sock.h"
-
 #include <openssl/err.h>
 #include <openssl/ssl.h>
+
+#include "mongo/base/disallow_copying.h"
+#include "mongo/util/net/sock.h"
 
 #endif // #ifdef MONGO_SSL
 

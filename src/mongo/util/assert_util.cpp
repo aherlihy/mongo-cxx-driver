@@ -17,19 +17,25 @@
 
 #define MONGO_LOG_DEFAULT_COMPONENT ::mongo::logger::LogComponent::kDefault
 
-#include "mongo/platform/basic.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/_types/_time_t.h>
+#include <time.h>
 
+#include "base/status.h"
+#include "bson/inline_decls.h"
+#include "logger/log_component.h"
+#include "logger/logstream_builder.h"
 #include "mongo/util/assert_util.h"
 
 using namespace std;
 
 #ifndef _WIN32
 #include <cxxabi.h>
-#include <sys/file.h>
 #endif
 
 #include "mongo/bson/bsonobjbuilder.h"
-#include "mongo/util/debug_util.h"
 #include "mongo/util/log.h"
 
 namespace mongo {

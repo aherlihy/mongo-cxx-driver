@@ -17,6 +17,11 @@
 
 #include "mongo/util/stringutils.h"
 
+#include <stddef.h>
+#include <string.h>
+
+#include "base/string_data.h"
+
 namespace mongo {
 
     using std::string;

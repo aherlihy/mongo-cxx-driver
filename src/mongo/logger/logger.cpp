@@ -15,9 +15,15 @@
 
 #include "mongo/logger/logger.h"
 
+#include "base/status-inl.h"
+#include "logger/log_manager.h"
 #include "mongo/base/init.h"
 #include "mongo/base/status.h"
-#include "mongo/platform/compiler.h"
+#include "platform/compiler_gcc.h"
+
+namespace mongo {
+class InitializerContext;
+}  // namespace mongo
 
 namespace mongo {
 namespace logger {

@@ -13,16 +13,20 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
+#include <time.h>
+#include <__tree>
+#include <algorithm>
+#include <sstream>
+#include <utility>
 
-#include "mongo/dbtests/mock/mock_replica_set.h"
-
+#include "bson/bsonobj.h"
+#include "bson/bsonobjbuilder.h"
+#include "dbtests/mock/mock_remote_db_server.h"
 #include "mongo/db/repl/member_state.h"
 #include "mongo/dbtests/mock/mock_conn_registry.h"
-#include "mongo/dbtests/mock/mock_dbclient_connection.h"
+#include "mongo/dbtests/mock/mock_replica_set.h"
 #include "mongo/util/map_util.h"
-
-#include <sstream>
+#include "util/assert_util.h"
 
 using namespace mongo::repl;
 

@@ -16,10 +16,14 @@
 #pragma once
 
 #include <boost/thread/mutex.hpp>
+#include <boost/thread/pthread/mutex.hpp>
 
+#include "bson/bsonobj.h"
 #include "mongo/base/disallow_copying.h"
 #include "mongo/db/jsobj.h"
 #include "mongo/platform/atomic_word.h"
+#include "platform/atomic_word_intrinsics.h"
+#include "platform/compiler_gcc.h"
 
 namespace mongo {
     /**

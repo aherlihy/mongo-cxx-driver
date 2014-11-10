@@ -13,18 +13,19 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
-
-#include "mongo/client/bulk_operation_builder.h"
-
 #include <algorithm>
 
+#include "client/bulk_update_builder.h"
+#include "client/write_operation.h"
+#include "mongo/client/bulk_operation_builder.h"
 #include "mongo/client/dbclientinterface.h"
 #include "mongo/client/insert_write_operation.h"
-#include "mongo/client/write_options.h"
 #include "mongo/client/write_result.h"
+#include "util/assert_util.h"
 
 namespace mongo {
+
+class BSONObj;
 
     namespace {
         inline bool compare(WriteOperation* const lhs, WriteOperation* const rhs) {

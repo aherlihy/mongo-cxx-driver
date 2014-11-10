@@ -17,19 +17,26 @@
 
 #pragma once
 
+#include <boost/core/noncopyable.hpp>
+#include <stddef.h>
+#include <iosfwd>
+#include <memory>
 #include <stack>
+#include <vector>
 
+#include "bson/bsonobj.h"
 #include "mongo/client/dbclientinterface.h"
 #include "mongo/client/export_macros.h"
 #include "mongo/db/jsobj.h"
 #include "mongo/db/json.h"
 #include "mongo/util/net/message.h"
+#include "util/assert_util.h"
 
 namespace mongo {
 
     class DBClientCursorShim;
-    class DBClientCursorShimCursorID;
     class DBClientCursorShimArray;
+    class DBClientCursorShimCursorID;
 
     /** for mock purposes only -- do not create variants of DBClientCursor, nor hang code here
         @see DBClientMockCursor

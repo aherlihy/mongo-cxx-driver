@@ -17,6 +17,8 @@
 
 #pragma once
 
+#include <_types/_uint64_t.h>
+
 #include "mongo/base/status.h"
 #include "mongo/base/string_data.h"
 #include "mongo/bson/bsontypes.h"

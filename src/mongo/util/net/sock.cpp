@@ -17,32 +17,46 @@
 
 #define MONGO_LOG_DEFAULT_COMPONENT ::mongo::logger::LogComponent::kNetworking
 
-#include "mongo/platform/basic.h"
+#include <netinet6/in6.h>
+#include <poll.h>
+#include <string.h>
+#include <sys/_endian.h>
+#include <sys/_types/_iovec_t.h>
+#include <sys/_types/_timeval.h>
+#include <sys/errno.h>
+#include <time.h>
+#include <ostream>
 
+#include "base/init.h"
+#include "base/status.h"
+#include "base/status-inl.h"
+#include "bson/util/builder.h"
+#include "logger/component_message_log_domain.h"
+#include "logger/log_component.h"
+#include "logger/log_severity.h"
+#include "logger/logger.h"
+#include "logger/logstream_builder.h"
 #include "mongo/util/net/sock.h"
+#include "util/assert_util.h"
+#include "util/fail_point.h"
+#include "util/time_support.h"
 
 #if !defined(_WIN32)
-# include <sys/socket.h>
-# include <sys/types.h>
-# include <sys/un.h>
+# include <netdb.h>
 # include <netinet/in.h>
 # include <netinet/tcp.h>
-# include <arpa/inet.h>
-# include <errno.h>
-# include <netdb.h>
+# include <sys/socket.h>
+# include <sys/un.h>
 # if defined(__openbsd__)
 #  include <sys/uio.h>
 # endif
 #endif
 
-#include "mongo/client/private/options.h"
 #include "mongo/util/background.h"
 #include "mongo/util/debug_util.h"
 #include "mongo/util/fail_point_service.h"
-#include "mongo/util/mongoutils/str.h"
 #include "mongo/util/log.h"
-#include "mongo/util/net/message.h"
-#include "mongo/util/net/ssl_manager.h"
+#include "mongo/util/mongoutils/str.h"
 #include "mongo/util/net/socket_poll.h"
 
 namespace mongo {

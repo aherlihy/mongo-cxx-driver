@@ -16,6 +16,7 @@
 
 #pragma once
 
+#include <iosfwd>
 #include <string>
 
 #include "mongo/base/disallow_copying.h"

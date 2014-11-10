@@ -15,9 +15,18 @@
 
 #include "mongo/base/initializer_dependency_graph.h"
 
+#include <boost/function/function_template.hpp>
+#include <stddef.h>
+#include <__hash_table>
 #include <algorithm>
 #include <iterator>
 #include <sstream>
+#include <utility>
+
+#include "base/error_codes.h"
+#include "base/initializer_function.h"
+#include "base/status.h"
+#include "base/status-inl.h"
 
 namespace mongo {
 

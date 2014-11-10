@@ -15,7 +15,8 @@
  *    limitations under the License.
  */
 
-#include <string>
+#include <stddef.h>
+
 #include "mongo/util/hex.h"
 
 namespace mongo {

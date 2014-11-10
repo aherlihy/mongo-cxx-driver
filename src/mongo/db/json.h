@@ -15,11 +15,19 @@
 
 #pragma once
 
+#include <stddef.h>
+#include <iosfwd>
 #include <string>
 
-#include "mongo/bson/bsonobj.h"
+#include "base/string_data.h"
+#include "bson/oid.h"
 #include "mongo/base/status.h"
+#include "mongo/bson/bsonobj.h"
 #include "mongo/client/export_macros.h"
+
+namespace mongo {
+class BSONObjBuilder;
+}  // namespace mongo
 
 namespace mongo {
 

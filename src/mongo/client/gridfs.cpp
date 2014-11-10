@@ -15,15 +15,24 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
-
-#include "mongo/client/gridfs.h"
-
+#include <stdio.h>
+#include <string.h>
 #include <algorithm>
-#include <boost/smart_ptr.hpp>
-#include <fcntl.h>
-#include <fstream>
-#include <utility>
+#include <iostream>
+#include <string>
+
+#include "bson/bson_db.h"
+#include "bson/bson-inl.h"
+#include "bson/bsonelement.h"
+#include "bson/bsonmisc.h"
+#include "bson/bsonobj.h"
+#include "bson/bsonobjbuilder.h"
+#include "bson/bsontypes.h"
+#include "client/dbclientinterface.h"
+#include "client/index_spec.h"
+#include "mongo/client/gridfs.h"
+#include "util/assert_util.h"
+#include "util/mongoutils/str.h"
 
 #if defined(_WIN32)
 #include <io.h>

@@ -13,11 +13,14 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
+#include <stddef.h>
 
-#include "mongo/client/index_spec.h"
-
+#include "base/string_data.h"
+#include "bson/bsonelement.h"
+#include "bson/bsonobjiterator.h"
 #include "mongo/client/dbclientinterface.h"
+#include "mongo/client/index_spec.h"
+#include "util/assert_util.h"
 
 namespace mongo {
 

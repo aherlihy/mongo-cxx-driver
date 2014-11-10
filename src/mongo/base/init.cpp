@@ -15,6 +15,8 @@
 
 #include "mongo/base/init.h"
 
+#include "base/status.h"
+
 MONGO_INITIALIZER_GROUP(default, MONGO_NO_PREREQUISITES, MONGO_NO_DEPENDENTS)
 
 MONGO_INITIALIZER_FUNCTION_ASSURE_FILE(base_init)

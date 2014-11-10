@@ -17,6 +17,7 @@
 
 #pragma once
 
+#include <stddef.h>
 #include <algorithm>  // for min
 #include <cstring>
 #include <iosfwd>

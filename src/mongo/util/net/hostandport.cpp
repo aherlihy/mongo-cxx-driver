@@ -13,22 +13,25 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
+#include <boost/functional/hash/hash.hpp>
+#include <functional>
+#include <ostream>
+#include <string>
 
-#include "mongo/util/net/hostandport.h"
-
-#include <boost/functional/hash.hpp>
-
+#include "base/error_codes.h"
+#include "base/status-inl.h"
+#include "base/string_data-inl.h"
+#include "bson/bsonelement.h"
 #include "mongo/base/parse_number.h"
 #include "mongo/base/status.h"
 #include "mongo/base/status_with.h"
 #include "mongo/base/string_data.h"
 #include "mongo/bson/util/builder.h"
 #include "mongo/client/options.h"
-#include "mongo/db/jsobj.h"
-#include "mongo/util/mongoutils/str.h"
-#include "mongo/util/net/sock.h"
 #include "mongo/util/assert_util.h"
+#include "mongo/util/mongoutils/str.h"
+#include "mongo/util/net/hostandport.h"
+#include "platform/hash_namespace.h"
 
 namespace mongo {
 

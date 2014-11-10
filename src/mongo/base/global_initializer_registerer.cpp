@@ -18,6 +18,10 @@
 #include <cstdlib>
 #include <iostream>
 
+#include "base/initializer_dependency_graph.h"
+#include "base/initializer_function.h"
+#include "base/status.h"
+#include "base/status-inl.h"
 #include "mongo/base/global_initializer.h"
 #include "mongo/base/initializer.h"
 

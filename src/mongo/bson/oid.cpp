@@ -15,20 +15,29 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
+#include <_types/_uint32_t.h>
+#include <_types/_uint64_t.h>
+#include <boost/functional/hash/hash.hpp>
+#include <boost/smart_ptr/scoped_ptr.hpp>
+#include <sys/_types/_int64_t.h>
+#include <time.h>
+#include <iosfwd>
+#include <limits>
 
-#include "mongo/bson/oid.h"
-
-#include <boost/functional/hash.hpp>
-#include <boost/scoped_ptr.hpp>
-
+#include "base/data_view.h"
+#include "base/status.h"
+#include "base/status-inl.h"
 #include "mongo/base/init.h"
-#include "mongo/bson/bsonobjbuilder.h"
-#include "mongo/platform/atomic_word.h"
+#include "mongo/bson/oid.h"
 #include "mongo/platform/random.h"
 #include "mongo/util/hex.h"
+#include "platform/atomic_word_intrinsics.h"
+#include "util/assert_util.h"
+#include "util/time_support.h"
 
 namespace mongo {
+
+class InitializerContext;
 
 namespace {
     boost::scoped_ptr<AtomicUInt32> counter;

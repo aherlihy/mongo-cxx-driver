@@ -17,9 +17,12 @@
 
 #pragma once
 
+#include <boost/core/noncopyable.hpp>
 #include <boost/noncopyable.hpp>
 #include <boost/thread/condition_variable.hpp>
 #include <boost/thread/mutex.hpp>
+#include <boost/thread/pthread/condition_variable_fwd.hpp>
+#include <boost/thread/pthread/mutex.hpp>
 
 namespace mongo {
 

@@ -13,9 +13,10 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
-
+#include "base/string_data.h"
 #include "mongo/util/password_digest.h"
+#include "util/md5.h"
+#include "util/md5.hpp"
 
 namespace mongo {
 

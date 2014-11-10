@@ -15,7 +15,16 @@
 
 #include "mongo/bson/util/bson_extract.h"
 
-#include "mongo/db/jsobj.h"
+#include <string>
+
+#include "base/error_codes.h"
+#include "base/status.h"
+#include "base/status-inl.h"
+#include "base/string_data.h"
+#include "bson/bsonelement.h"
+#include "bson/bsonobj.h"
+#include "bson/bsontypes.h"
+#include "bson/oid.h"
 #include "mongo/util/mongoutils/str.h"
 
 namespace mongo {

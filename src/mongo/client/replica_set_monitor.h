@@ -15,20 +15,33 @@
 
 #pragma once
 
+#include <boost/function/function_template.hpp>
 #include <boost/shared_ptr.hpp>
-#include <string>
+#include <boost/smart_ptr/detail/operator_bool.hpp>
+#include <boost/smart_ptr/shared_ptr.hpp>
+#include <stddef.h>
+#include <sys/_types/_int64_t.h>
+#include <iosfwd>
 #include <set>
+#include <string>
 
+#include "base/status.h"
 #include "mongo/base/disallow_copying.h"
 #include "mongo/base/string_data.h"
 #include "mongo/stdx/functional.h"
 #include "mongo/util/net/hostandport.h"
+#include "platform/cstdint.h"
+
+namespace mongo {
+class BSONObjBuilder;
+}  // namespace mongo
 
 namespace mongo {
     class BSONObj;
     class ReplicaSetMonitor;
     class TagSet;
     struct ReadPreferenceSetting;
+
     typedef boost::shared_ptr<ReplicaSetMonitor> ReplicaSetMonitorPtr;
 
     /**
@@ -192,6 +205,7 @@ namespace mongo {
         struct IsMasterReply;
         struct ScanState;
         struct SetState;
+
         typedef boost::shared_ptr<ScanState> ScanStatePtr;
         typedef boost::shared_ptr<SetState> SetStatePtr;
 

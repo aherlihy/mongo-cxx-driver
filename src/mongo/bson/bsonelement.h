@@ -17,10 +17,17 @@
 
 #pragma once
 
+#include <_types/_uint32_t.h>
+#include <stddef.h>
 #include <string.h> // strlen
+#include <iosfwd>
+#include <limits>
 #include <string>
 #include <vector>
 
+#include "base/data_view.h"
+#include "base/string_data.h"
+#include "bson/util/builder.h"
 #include "mongo/base/data_cursor.h"
 #include "mongo/bson/bsontypes.h"
 #include "mongo/bson/oid.h"
@@ -29,10 +36,12 @@
 #include "mongo/client/export_macros.h"
 #include "mongo/platform/cstdint.h"
 #include "mongo/platform/float_utils.h"
+#include "util/assert_util.h"
+#include "util/time_support.h"
 
 namespace mongo {
-    class BSONObj;
     class BSONElement;
+    class BSONObj;
     class BSONObjBuilder;
 
     typedef mongo::BSONElement be;

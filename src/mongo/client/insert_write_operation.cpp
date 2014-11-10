@@ -13,11 +13,9 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
-
+#include "bson/bsonobjbuilder.h"
+#include "bson/oid.h"
 #include "mongo/client/insert_write_operation.h"
-
-#include "mongo/client/dbclientinterface.h"
 #include "mongo/db/namespace_string.h"
 
 

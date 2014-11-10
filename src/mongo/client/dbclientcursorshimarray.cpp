@@ -13,10 +13,13 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
+#include <stddef.h>
 
-#include "mongo/client/dbclientcursorshimarray.h"
+#include "bson/bsonelement.h"
+#include "bson/bsonobjiterator.h"
 #include "mongo/client/dbclientcursor.h"
+#include "mongo/client/dbclientcursorshimarray.h"
+#include "util/assert_util.h"
 
 namespace mongo  {
 

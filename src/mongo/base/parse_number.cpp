@@ -13,17 +13,23 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
-
-#include "mongo/base/parse_number.h"
-
-#include <algorithm>
-#include <cerrno>
+#include <_types/_uint8_t.h>
+#include <ctype.h>
+#include <stddef.h>
+#include <sys/errno.h>
 #include <cstdlib>
+#include <iosfwd>
 #include <limits>
 #include <string>
 
+#include "base/error_codes.h"
+#include "base/status.h"
+#include "base/status-inl.h"
+#include "base/string_data.h"
+#include "base/string_data-inl.h"
+#include "mongo/base/parse_number.h"
 #include "mongo/platform/cstdint.h"
+#include "platform/compiler_gcc.h"
 
 namespace mongo {
 

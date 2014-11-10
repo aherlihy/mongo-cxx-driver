@@ -15,7 +15,17 @@
 
 #pragma once
 
+#include <iosfwd>
+
+#include "bson/bsonobj.h"
+#include "bson/util/builder.h"
 #include "mongo/client/write_operation_base.h"
+#include "util/net/operation.h"
+
+namespace mongo {
+class BSONArrayBuilder;
+class BSONObjBuilder;
+}  // namespace mongo
 
 namespace mongo {
 

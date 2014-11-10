@@ -17,8 +17,9 @@
 
 #include "mongo/util/concurrency/synchronization.h"
 
-#include <boost/date_time/posix_time/posix_time.hpp>
-#include <boost/thread/locks.hpp>
+#include <boost/thread/lock_guard.hpp>
+#include <boost/thread/lock_types.hpp>
+#include <boost/thread/pthread/condition_variable.hpp>
 
 #include "mongo/util/assert_util.h"
 

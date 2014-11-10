@@ -15,11 +15,30 @@
 
 #define MONGO_LOG_DEFAULT_COMPONENT ::mongo::logger::LogComponent::kDefault
 
-#include "mongo/db/jsobj.h"
-
 #include <boost/lexical_cast.hpp>
+#include <ctype.h>
+#include <stdlib.h>
+#include <sys/_types/_int32_t.h>
+#include <limits>
+#include <ostream>
+#include <set>
+#include <string>
 
+#include "base/string_data.h"
+#include "bson/bsonelement.h"
+#include "bson/bsonobj.h"
+#include "bson/bsonobjbuilder.h"
+#include "bson/bsonobjiterator.h"
+#include "bson/bsontypes.h"
+#include "bson/oid.h"
+#include "bson/timestamp.h"
+#include "bson/util/builder.h"
+#include "logger/log_component.h"
+#include "logger/logstream_builder.h"
 #include "mongo/util/log.h"
+#include "platform/cstdint.h"
+#include "util/assert_util.h"
+#include "util/time_support.h"
 
 namespace mongo {
 

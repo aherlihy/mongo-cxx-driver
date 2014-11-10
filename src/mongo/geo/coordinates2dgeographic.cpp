@@ -19,7 +19,9 @@
 
 #include <vector>
 
-#include "mongo/db/jsobj.h"
+#include "bson/bson-inl.h"
+#include "bson/bsonmisc.h"
+#include "bson/bsonobjbuilder.h"
 #include "mongo/geo/constants.h"
 #include "mongo/util/assert_util.h"
 

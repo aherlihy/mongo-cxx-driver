@@ -19,9 +19,16 @@
 
 #pragma once
 
+#include <iosfwd>
+#include <unordered_map>
+
 #include "mongo/base/status.h"
 #include "mongo/platform/unordered_map.h"
 #include "mongo/util/fail_point.h"
+
+namespace mongo {
+class FailPoint;
+}  // namespace mongo
 
 namespace mongo {
     /**

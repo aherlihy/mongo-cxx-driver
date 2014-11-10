@@ -17,6 +17,11 @@
 
 #pragma once
 
+#include <_types/_uint32_t.h>
+#include <stdint.h>
+#include <sys/_types/_int32_t.h>
+#include <sys/_types/_int64_t.h>
+
 #include "mongo/platform/cstdint.h"
 
 namespace mongo {

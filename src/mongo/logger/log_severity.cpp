@@ -13,11 +13,9 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
-
+#include "base/string_data.h"
+#include "logger/log_severity-inl.h"
 #include "mongo/logger/log_severity.h"
-
-#include <iostream>
 
 namespace mongo {
 namespace logger {

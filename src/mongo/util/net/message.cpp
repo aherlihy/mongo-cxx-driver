@@ -15,15 +15,10 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
-
 #include "mongo/util/net/message.h"
-
-#include <fcntl.h>
-#include <errno.h>
-#include <time.h>
-
 #include "mongo/util/net/message_port.h"
+#include "platform/atomic_word_intrinsics.h"
+#include "util/net/operation.h"
 
 namespace mongo {
 

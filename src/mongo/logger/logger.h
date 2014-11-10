@@ -16,8 +16,14 @@
 #pragma once
 
 #include "mongo/client/export_macros.h"
-#include "mongo/logger/message_log_domain.h"
 #include "mongo/logger/log_manager.h"
+#include "mongo/logger/message_log_domain.h"
+
+namespace mongo {
+namespace logger {
+class ComponentMessageLogDomain;
+}  // namespace logger
+}  // namespace mongo
 
 namespace mongo {
 namespace logger {

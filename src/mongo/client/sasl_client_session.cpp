@@ -15,6 +15,10 @@
 
 #include "mongo/client/sasl_client_session.h"
 
+#include <boost/smart_ptr/detail/operator_bool.hpp>
+
+#include "base/string_data.h"
+#include "base/string_data-inl.h"
 #include "mongo/util/assert_util.h"
 
 namespace mongo {

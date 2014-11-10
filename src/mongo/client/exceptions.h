@@ -16,8 +16,11 @@
 #pragma once
 
 #include <exception>
+#include <iosfwd>
 #include <string>
 
+#include "bson/bsonobj.h"
+#include "client/export_macros.h"
 #include "mongo/db/jsobj.h"
 
 namespace mongo {

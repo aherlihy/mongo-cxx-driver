@@ -18,7 +18,9 @@
 
 #include "mongo/util/base64.h"
 
+#include <ctype.h>
 #include <sstream>
+#include <string>
 
 #include "mongo/util/assert_util.h"
 

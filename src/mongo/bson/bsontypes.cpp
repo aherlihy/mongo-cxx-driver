@@ -15,8 +15,6 @@
 
 #include "mongo/bson/bsontypes.h"
 
-#include "mongo/db/jsobj.h"
-
 namespace mongo {
 
     /* take a BSONType and return the name of that type as a char* */

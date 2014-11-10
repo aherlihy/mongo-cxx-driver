@@ -13,27 +13,38 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
-
-#include "mongo/util/time_support.h"
-
-#include <cstdio>
-#include <string>
-#include <iostream>
-#include <boost/thread/thread.hpp>
+#include <boost/date_time/posix_time/posix_time_types.hpp>
+#include <boost/date_time/posix_time/ptime.hpp>
+#include <boost/date_time/time_duration.hpp>
 #include <boost/thread/tss.hpp>
-#include <boost/thread/xtime.hpp>
+#include <stddef.h>
+#include <string.h>
+#include <sys/_types/_int32_t.h>
+#include <sys/_types/_timespec.h>
+#include <sys/_types/_timeval.h>
+#include <algorithm>
+#include <cstdio>
+#include <ctime>
+#include <iostream>
+#include <limits>
 
+#include "base/error_codes.h"
+#include "base/status.h"
+#include "base/status-inl.h"
+#include "base/status_with.h"
+#include "base/string_data-inl.h"
 #include "mongo/base/init.h"
 #include "mongo/base/parse_number.h"
 #include "mongo/bson/util/builder.h"
 #include "mongo/platform/cstdint.h"
-#include "mongo/util/debug_util.h"
 #include "mongo/util/assert_util.h"
+#include "mongo/util/debug_util.h"
+#include "mongo/util/time_support.h"
 
 #ifdef _WIN32
 #include <boost/date_time/filetime_functions.hpp>
 #include <boost/thread/mutex.hpp>
+
 #include "mongo/util/timer.h"
 
 // NOTE(schwerin): MSVC's _snprintf is not a drop-in replacement for C99's snprintf().  In
@@ -957,6 +968,7 @@ namespace {
     }
 #else
 #  include <sys/time.h>
+
     unsigned long long curTimeMillis64() {
         timeval tv;
         gettimeofday(&tv, NULL);

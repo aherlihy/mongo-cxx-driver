@@ -16,10 +16,18 @@
 #pragma once
 
 #include "mongo/dbtests/mock/mock_remote_db_server.h"
+#include "util/net/hostandport.h"
+
+namespace mongo {
+class MockRemoteDBServer;
+}  // namespace mongo
 //#include "mongo/db/repl/rs_config.h"
 
-#include <string>
+#include <stddef.h>
+#include <__functional_base>
+#include <iosfwd>
 #include <map>
+#include <string>
 #include <vector>
 
 namespace mongo {

@@ -17,9 +17,11 @@
 
 #pragma once
 
+#include <stddef.h>
 #include <utility>
 #include <vector>
 
+#include "bson/bsonobj.h"
 #include "mongo/client/export_macros.h"
 #include "mongo/db/jsobj.h"
 #include "mongo/geo/coordinates.h"

@@ -19,8 +19,14 @@
 
 #pragma once
 
+#include "base/status-inl.h"
 #include "mongo/base/init.h"
 #include "mongo/util/fail_point_registry.h"
+#include "util/fail_point.h"
+
+namespace mongo {
+class InitializerContext;
+}  // namespace mongo
 
 namespace mongo {
     /**
