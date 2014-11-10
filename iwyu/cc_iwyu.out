@@ -1,0 +1,342 @@
+
+(build/scons/sconf_temp/conftest_1.c has correct #includes/fwd-decls)
+build/scons/sconf_temp/conftest_3.c:3:2: error: 
+#error
+ ^
+
+(build/scons/sconf_temp/conftest_3.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_4.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_5.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_6.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_7.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_8.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_9.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_10.c has correct #includes/fwd-decls)
+
+build/scons/sconf_temp/conftest_13.c should add these lines:
+#include <sys/unistd.h>                 // for _POSIX_VERSION
+
+build/scons/sconf_temp/conftest_13.c should remove these lines:
+- #include <unistd.h>  // lines 4-4
+
+The full include-list for build/scons/sconf_temp/conftest_13.c:
+#include <sys/unistd.h>                 // for _POSIX_VERSION
+---
+build/scons/sconf_temp/conftest_14.c:4:2: error: POSIX clock_gettime not supported
+#error POSIX clock_gettime not supported
+ ^
+
+(build/scons/sconf_temp/conftest_14.c has correct #includes/fwd-decls)
+
+build/scons/sconf_temp/conftest_21.c should add these lines:
+
+build/scons/sconf_temp/conftest_21.c should remove these lines:
+- #include <unistd.h>  // lines 2-2
+
+The full include-list for build/scons/sconf_temp/conftest_21.c:
+---
+
+(build/scons/sconf_temp/conftest_22.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_23.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_1.c has correct #includes/fwd-decls)
+build/scons/sconf_temp/conftest_3.c:3:2: error: 
+#error
+ ^
+
+(build/scons/sconf_temp/conftest_3.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_4.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_5.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_6.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_7.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_8.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_9.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_10.c has correct #includes/fwd-decls)
+
+build/scons/sconf_temp/conftest_13.c should add these lines:
+#include <sys/unistd.h>                 // for _POSIX_VERSION
+
+build/scons/sconf_temp/conftest_13.c should remove these lines:
+- #include <unistd.h>  // lines 4-4
+
+The full include-list for build/scons/sconf_temp/conftest_13.c:
+#include <sys/unistd.h>                 // for _POSIX_VERSION
+---
+build/scons/sconf_temp/conftest_14.c:4:2: error: POSIX clock_gettime not supported
+#error POSIX clock_gettime not supported
+ ^
+
+(build/scons/sconf_temp/conftest_14.c has correct #includes/fwd-decls)
+
+build/scons/sconf_temp/conftest_21.c should add these lines:
+
+build/scons/sconf_temp/conftest_21.c should remove these lines:
+- #include <unistd.h>  // lines 2-2
+
+The full include-list for build/scons/sconf_temp/conftest_21.c:
+---
+
+(build/scons/sconf_temp/conftest_22.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_23.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_1.c has correct #includes/fwd-decls)
+build/scons/sconf_temp/conftest_3.c:3:2: error: 
+#error
+ ^
+
+(build/scons/sconf_temp/conftest_3.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_4.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_5.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_6.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_7.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_8.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_9.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_10.c has correct #includes/fwd-decls)
+
+build/scons/sconf_temp/conftest_13.c should add these lines:
+#include <sys/unistd.h>                 // for _POSIX_VERSION
+
+build/scons/sconf_temp/conftest_13.c should remove these lines:
+- #include <unistd.h>  // lines 4-4
+
+The full include-list for build/scons/sconf_temp/conftest_13.c:
+#include <sys/unistd.h>                 // for _POSIX_VERSION
+---
+build/scons/sconf_temp/conftest_14.c:4:2: error: POSIX clock_gettime not supported
+#error POSIX clock_gettime not supported
+ ^
+
+(build/scons/sconf_temp/conftest_14.c has correct #includes/fwd-decls)
+
+build/scons/sconf_temp/conftest_21.c should add these lines:
+
+build/scons/sconf_temp/conftest_21.c should remove these lines:
+- #include <unistd.h>  // lines 2-2
+
+The full include-list for build/scons/sconf_temp/conftest_21.c:
+---
+
+(build/scons/sconf_temp/conftest_22.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_23.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_1.c has correct #includes/fwd-decls)
+build/scons/sconf_temp/conftest_3.c:3:2: error: 
+#error
+ ^
+
+(build/scons/sconf_temp/conftest_3.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_4.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_5.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_6.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_7.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_8.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_9.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_10.c has correct #includes/fwd-decls)
+
+build/scons/sconf_temp/conftest_13.c should add these lines:
+#include <sys/unistd.h>                 // for _POSIX_VERSION
+
+build/scons/sconf_temp/conftest_13.c should remove these lines:
+- #include <unistd.h>  // lines 4-4
+
+The full include-list for build/scons/sconf_temp/conftest_13.c:
+#include <sys/unistd.h>                 // for _POSIX_VERSION
+---
+build/scons/sconf_temp/conftest_14.c:4:2: error: POSIX clock_gettime not supported
+#error POSIX clock_gettime not supported
+ ^
+
+(build/scons/sconf_temp/conftest_14.c has correct #includes/fwd-decls)
+
+build/scons/sconf_temp/conftest_21.c should add these lines:
+
+build/scons/sconf_temp/conftest_21.c should remove these lines:
+- #include <unistd.h>  // lines 2-2
+
+The full include-list for build/scons/sconf_temp/conftest_21.c:
+---
+
+(build/scons/sconf_temp/conftest_22.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_23.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_1.c has correct #includes/fwd-decls)
+build/scons/sconf_temp/conftest_3.c:3:2: error: 
+#error
+ ^
+
+(build/scons/sconf_temp/conftest_3.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_4.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_5.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_6.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_7.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_8.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_9.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_10.c has correct #includes/fwd-decls)
+
+build/scons/sconf_temp/conftest_13.c should add these lines:
+#include <sys/unistd.h>                 // for _POSIX_VERSION
+
+build/scons/sconf_temp/conftest_13.c should remove these lines:
+- #include <unistd.h>  // lines 4-4
+
+The full include-list for build/scons/sconf_temp/conftest_13.c:
+#include <sys/unistd.h>                 // for _POSIX_VERSION
+---
+build/scons/sconf_temp/conftest_14.c:4:2: error: POSIX clock_gettime not supported
+#error POSIX clock_gettime not supported
+ ^
+
+(build/scons/sconf_temp/conftest_14.c has correct #includes/fwd-decls)
+
+build/scons/sconf_temp/conftest_21.c should add these lines:
+
+build/scons/sconf_temp/conftest_21.c should remove these lines:
+- #include <unistd.h>  // lines 2-2
+
+The full include-list for build/scons/sconf_temp/conftest_21.c:
+---
+
+(build/scons/sconf_temp/conftest_22.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_23.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_1.c has correct #includes/fwd-decls)
+build/scons/sconf_temp/conftest_3.c:3:2: error: 
+#error
+ ^
+
+(build/scons/sconf_temp/conftest_3.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_4.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_5.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_6.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_7.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_8.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_9.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_10.c has correct #includes/fwd-decls)
+
+build/scons/sconf_temp/conftest_13.c should add these lines:
+#include <sys/unistd.h>                 // for _POSIX_VERSION
+
+build/scons/sconf_temp/conftest_13.c should remove these lines:
+- #include <unistd.h>  // lines 4-4
+
+The full include-list for build/scons/sconf_temp/conftest_13.c:
+#include <sys/unistd.h>                 // for _POSIX_VERSION
+---
+build/scons/sconf_temp/conftest_14.c:4:2: error: POSIX clock_gettime not supported
+#error POSIX clock_gettime not supported
+ ^
+
+(build/scons/sconf_temp/conftest_14.c has correct #includes/fwd-decls)
+
+build/scons/sconf_temp/conftest_21.c should add these lines:
+
+build/scons/sconf_temp/conftest_21.c should remove these lines:
+- #include <unistd.h>  // lines 2-2
+
+The full include-list for build/scons/sconf_temp/conftest_21.c:
+---
+
+(build/scons/sconf_temp/conftest_22.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_23.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_1.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_4.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_5.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_6.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_7.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_8.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_9.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_10.c has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_12.c has correct #includes/fwd-decls)
+
+build/scons/sconf_temp/conftest_14.c should add these lines:
+#include <sys/unistd.h>                 // for _POSIX_VERSION
+
+build/scons/sconf_temp/conftest_14.c should remove these lines:
+- #include <unistd.h>  // lines 4-4
+
+The full include-list for build/scons/sconf_temp/conftest_14.c:
+#include <sys/unistd.h>                 // for _POSIX_VERSION
+---
+build/scons/sconf_temp/conftest_15.c:4:2: error: POSIX clock_gettime not supported
+#error POSIX clock_gettime not supported
+ ^
+
+(build/scons/sconf_temp/conftest_15.c has correct #includes/fwd-decls)
+
+build/scons/sconf_temp/conftest_22.c should add these lines:
+
+build/scons/sconf_temp/conftest_22.c should remove these lines:
+- #include <unistd.h>  // lines 2-2
+
+The full include-list for build/scons/sconf_temp/conftest_22.c:
+---
+
+(build/scons/sconf_temp/conftest_23.c has correct #includes/fwd-decls)
+warning: -Wl,-bind_at_load: 'linker' input unused
+warning: build/scons/sconf_temp/conftest_23.o: 'linker' input unused
+warning: -lboost_regex-mt: 'linker' input unused
+warning: -lboost_thread-mt: 'linker' input unused
+warning: -lboost_system-mt: 'linker' input unused
+warning: -lrt: 'linker' input unused
+warning: argument unused during compilation: '-fPIC'
+warning: argument unused during compilation: '-mmacosx-version-min=10.9'
+error: unable to handle compilation, expected exactly one compiler job in ''
+
+(build/scons/sconf_temp/conftest_24.c has correct #includes/fwd-decls)

@@ -147,4 +147,4 @@ namespace mongo {
 
 }  // namespace mongo
 
-#include "mongo/base/status-inl.h"
+#include "mongo/base/status-inl.h" // IWYU pragma: export
