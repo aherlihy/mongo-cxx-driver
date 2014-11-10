@@ -15,12 +15,20 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
+#include <ostream>
+#include <string>
 
-#include "mongo/db/dbmessage.h"
-
+#include "base/status.h"
+#include "base/status-inl.h"
+#include "bson/bson_validate.h"
+#include "bson/util/builder.h"
+#include "bson/util/misc.h"
 #include "mongo/client/options.h"
-#include "mongo/client/private/options.h"
+#include "mongo/db/dbmessage.h"
+#include "util/assert_util.h"
+#include "util/mongoutils/str.h"
+#include "util/net/message.h"
+#include "util/net/message_port.h"
 
 namespace mongo {
 

@@ -16,12 +16,23 @@
 #pragma once
 
 #include <boost/thread/mutex.hpp>
+#include <boost/thread/pthread/mutex.hpp>
+#include <iosfwd>
+#include <unordered_map>
 
 #include "mongo/base/status.h"
 #include "mongo/client/dbclientinterface.h"
 #include "mongo/dbtests/mock/mock_dbclient_connection.h"
 #include "mongo/dbtests/mock/mock_remote_db_server.h"
 #include "mongo/platform/unordered_map.h"
+
+namespace boost {
+template <class T> class scoped_ptr;
+}  // namespace boost
+namespace mongo {
+class MockDBClientConnection;
+class MockRemoteDBServer;
+}  // namespace mongo
 
 namespace mongo {
     /**

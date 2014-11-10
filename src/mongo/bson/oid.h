@@ -17,12 +17,19 @@
 
 #pragma once
 
+#include <_types/_uint8_t.h>
+#include <stddef.h>
+#include <string.h>
+#include <sys/_types/_int32_t.h>
+#include <sys/_types/_time_t.h>
+#include <ostream>
 #include <string>
 
 #include "mongo/base/data_view.h"
 #include "mongo/bson/util/builder.h"
 #include "mongo/client/export_macros.h"
 #include "mongo/util/time_support.h"
+#include "platform/cstdint.h"
 
 namespace mongo {
     class SecureRandom;

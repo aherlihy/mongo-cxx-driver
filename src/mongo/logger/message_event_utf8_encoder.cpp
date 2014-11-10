@@ -13,12 +13,15 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
-
-#include "mongo/logger/message_event_utf8_encoder.h"
-
+#include <stddef.h>
 #include <iostream>
 
+#include "base/string_data.h"
+#include "base/string_data-inl.h"
+#include "logger/log_component.h"
+#include "logger/log_severity.h"
+#include "logger/message_event.h"
+#include "mongo/logger/message_event_utf8_encoder.h"
 #include "mongo/util/time_support.h"
 
 namespace mongo {

@@ -15,9 +15,10 @@
 
 #include "mongo/base/make_string_vector.h"
 
+#include <stdarg.h>
 #include <cstdlib>
 #include <iostream>
-#include <stdarg.h>
+#include <string>
 
 namespace mongo {
 

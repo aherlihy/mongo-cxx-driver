@@ -19,18 +19,45 @@
 
 #include <boost/intrusive_ptr.hpp>
 #include <boost/noncopyable.hpp>
-#include <set>
+#include <boost/smart_ptr/intrusive_ptr.hpp>
+#include <stdlib.h>
+#include <string.h>
+#include <__bit_reference>
+#include <__functional_03>
+#include <__hash_table>
+#include <__mutex_base>
+#include <__split_buffer>
+#include <__tree>
 #include <list>
+#include <map>
+#include <memory>
+#include <new>
+#include <set>
+#include <sstream>
 #include <string>
-#include <vector>
+#include <type_traits>
+#include <unordered_map>
 #include <utility>
+#include <vector>
 
-#include "mongo/bson/bsonelement.h"
+#include "base/status.h"
+#include "base/status-inl.h"
+#include "bson/bsonmisc.h"
+#include "bson/bsontypes.h"
+#include "bson/oid.h"
 #include "mongo/base/data_view.h"
 #include "mongo/base/string_data.h"
+#include "mongo/bson/bsonelement.h"
 #include "mongo/bson/util/builder.h"
 #include "mongo/client/export_macros.h"
 #include "mongo/platform/atomic_word.h"
+#include "platform/atomic_word_intrinsics.h"
+#include "util/assert_util.h"
+
+namespace mongo {
+class BSONObjIterator;
+class Ordering;
+}  // namespace mongo
 
 namespace mongo {
 

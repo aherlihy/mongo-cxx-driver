@@ -15,6 +15,7 @@
 
 #pragma once
 
+#include <iosfwd>
 #include <string>
 #include <vector>
 
@@ -24,8 +25,8 @@
 
 namespace mongo {
 
-    class BSONObj;
     class BSONElement;
+    class BSONObj;
     class OID;
     class OpTime;
 

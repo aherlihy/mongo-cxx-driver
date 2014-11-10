@@ -13,8 +13,9 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
+#include <utility>
 
+#include "logger/log_domain.h"
 #include "mongo/logger/log_manager.h"
 
 namespace mongo {

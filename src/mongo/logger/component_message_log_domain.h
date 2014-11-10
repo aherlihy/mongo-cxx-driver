@@ -15,6 +15,10 @@
 
 #pragma once
 
+#include "base/disallow_copying.h"
+#include "client/export_macros.h"
+#include "logger/log_component.h"
+#include "logger/log_severity.h"
 #include "mongo/logger/log_component_settings.h"
 #include "mongo/logger/message_log_domain.h"
 

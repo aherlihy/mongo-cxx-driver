@@ -13,14 +13,14 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
-
-#include "mongo/client/bulk_update_builder.h"
-
+#include "bson/bsonobj.h"
+#include "client/bulk_upsert_builder.h"
 #include "mongo/client/bulk_operation_builder.h"
+#include "mongo/client/bulk_update_builder.h"
 #include "mongo/client/delete_write_operation.h"
 #include "mongo/client/update_write_operation.h"
 #include "mongo/client/write_options.h"
+#include "util/assert_util.h"
 
 namespace mongo {
 

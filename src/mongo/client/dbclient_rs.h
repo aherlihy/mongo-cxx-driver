@@ -18,17 +18,33 @@
 #pragma once
 
 #include <boost/shared_ptr.hpp>
+#include <boost/smart_ptr/detail/operator_bool.hpp>
+#include <boost/smart_ptr/scoped_ptr.hpp>
+#include <boost/smart_ptr/shared_ptr.hpp>
+#include <stddef.h>
+#include <iosfwd>
+#include <map>
+#include <memory>
 #include <utility>
+#include <vector>
 
+#include "bson/bsonobj.h"
 #include "mongo/client/dbclientinterface.h"
 #include "mongo/client/export_macros.h"
 #include "mongo/util/net/hostandport.h"
+
+namespace mongo {
+class DBClientCursor;
+class Message;
+class WriteConcern;
+}  // namespace mongo
 
 namespace mongo {
 
     class ReplicaSetMonitor;
     class TagSet;
     struct ReadPreferenceSetting;
+
     typedef boost::shared_ptr<ReplicaSetMonitor> ReplicaSetMonitorPtr;
 
     /** Use this class to connect to a replica set of servers.  The class will manage

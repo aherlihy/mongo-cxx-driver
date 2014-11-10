@@ -13,14 +13,12 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
+#include <_types/_uint64_t.h>
+#include <boost/static_assert.hpp>
+#include <limits>
 
 #include "mongo/platform/process_id.h"
-
-#include <boost/static_assert.hpp>
-#include <iostream>
-#include <sstream>
-#include <limits>
+#include "platform/cstdint.h"
 
 namespace mongo {
 

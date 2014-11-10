@@ -13,6 +13,17 @@
  *    limitations under the License.
  */
 
+#include <stddef.h>
+#include <iosfwd>
+
+#include "base/error_codes.h"
+#include "client/export_macros.h"
+#include "platform/atomic_word_intrinsics.h"
+
+namespace mongo {
+class Status;
+}  // namespace mongo
+
 #pragma once
 
 namespace mongo {

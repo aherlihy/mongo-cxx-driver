@@ -17,12 +17,12 @@
 
 #pragma once
 
+#include <boost/scoped_array.hpp>
+#include <boost/smart_ptr/scoped_array.hpp>
 #include <ctype.h>
-
+#include <iosfwd>
 #include <string>
 #include <vector>
-
-#include <boost/scoped_array.hpp>
 
 #include "mongo/base/string_data.h"
 

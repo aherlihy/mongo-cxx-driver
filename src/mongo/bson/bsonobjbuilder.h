@@ -22,11 +22,27 @@
 
 #pragma once
 
+#include <_types/_uint32_t.h>
+#include <boost/core/noncopyable.hpp>
 #include <boost/static_assert.hpp>
-#include <map>
+#include <stddef.h>
+#include <string.h>
+#include <sys/_types/_time_t.h>
 #include <cmath>
+#include <iosfwd>
 #include <limits>
+#include <list>
+#include <map>
+#include <set>
+#include <vector>
 
+#include "base/data_view.h"
+#include "base/string_data.h"
+#include "bson/bson-inl.h"
+#include "bson/bsonobjiterator.h"
+#include "bson/bsontypes.h"
+#include "bson/oid.h"
+#include "bson/util/builder.h"
 #include "mongo/base/data_cursor.h"
 #include "mongo/base/parse_number.h"
 #include "mongo/bson/bson_field.h"
@@ -35,6 +51,9 @@
 #include "mongo/bson/bsonobj.h"
 #include "mongo/bson/timestamp.h"
 #include "mongo/client/export_macros.h"
+#include "platform/cstdint.h"
+#include "util/assert_util.h"
+#include "util/time_support.h"
 
 namespace mongo {
 

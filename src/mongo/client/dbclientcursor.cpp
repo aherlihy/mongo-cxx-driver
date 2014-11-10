@@ -17,15 +17,26 @@
 
 #define MONGO_LOG_DEFAULT_COMPONENT ::mongo::logger::LogComponent::kNetworking
 
-#include "mongo/platform/basic.h"
+#include <boost/function/function_template.hpp>
+#include <string.h>
+#include <ostream>
+#include <string>
 
+#include "bson/bsonobjbuilder.h"
+#include "bson/util/builder.h"
+#include "client/constants.h"
+#include "client/dbclientinterface.h"
+#include "db/namespace_string-inl.h"
+#include "logger/log_component.h"
+#include "logger/logstream_builder.h"
 #include "mongo/client/dbclientcursor.h"
-
+#include "mongo/client/dbclientcursorshim.h"
 #include "mongo/db/dbmessage.h"
 #include "mongo/db/namespace_string.h"
 #include "mongo/util/debug_util.h"
-#include "mongo/client/dbclientcursorshim.h"
 #include "mongo/util/log.h"
+#include "util/net/message.h"
+#include "util/net/operation.h"
 
 namespace mongo {
 

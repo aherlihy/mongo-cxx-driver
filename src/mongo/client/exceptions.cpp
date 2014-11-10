@@ -15,6 +15,8 @@
 
 #include "mongo/client/exceptions.h"
 
+#include <string>
+
 namespace mongo {
 
     namespace {

@@ -17,17 +17,24 @@
 
 #pragma once
 
-#include "mongo/config.h"
-
+#include <_types/_uint64_t.h>
 #include <stdio.h>
+#include <sys/_types/_sa_family_t.h>
+#include <sys/_types/_time_t.h>
+#include <unistd.h>
+
+#include "client/export_macros.h"
+#include "logger/log_severity-inl.h"
+#include "mongo/config.h"
+#include "platform/compiler_gcc.h"
 
 #ifndef _WIN32
 
+#include <errno.h>
+#include <sys/socket.h>
 #include <sys/socket.h>
 #include <sys/types.h>
-#include <sys/socket.h>
 #include <sys/un.h>
-#include <errno.h>
 
 #ifdef __openbsd__
 # include <sys/uio.h>
@@ -36,6 +43,7 @@
 #endif // not _WIN32
 
 #include <boost/scoped_ptr.hpp>
+#include <iosfwd>
 #include <string>
 #include <utility>
 #include <vector>

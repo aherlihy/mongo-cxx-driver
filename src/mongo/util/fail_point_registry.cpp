@@ -15,8 +15,19 @@
 
 #include "mongo/util/fail_point_registry.h"
 
+#include <stddef.h>
+#include <string>
+#include <utility>
+
+#include "base/error_codes.h"
+#include "base/status.h"
+#include "base/status-inl.h"
 #include "mongo/util/map_util.h"
 #include "mongo/util/mongoutils/str.h"
+
+namespace mongo {
+class FailPoint;
+}  // namespace mongo
 
 using mongoutils::str::stream;
 

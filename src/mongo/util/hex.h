@@ -17,10 +17,13 @@
 
 #pragma once
 
+#include <iosfwd>
 #include <string>
 
+#include "client/export_macros.h"
 #include "mongo/base/string_data.h"
 #include "mongo/bson/util/builder.h"
+#include "util/assert_util.h"
 
 namespace mongo {
     //can't use hex namespace because it conflicts with hex iostream function

@@ -15,10 +15,16 @@
 
 #pragma once
 
+#include <iosfwd>
+
 #include "mongo/base/status.h"
 #include "mongo/bson/bsontypes.h"
 #include "mongo/client/dbclientinterface.h"
 #include "mongo/client/export_macros.h"
+
+namespace mongo {
+class DBClientWithCommands;
+}  // namespace mongo
 
 namespace mongo {
     class BSONObj;

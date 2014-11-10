@@ -15,14 +15,40 @@
 
 #define MONGO_LOG_DEFAULT_COMPONENT ::mongo::logger::LogComponent::kDefault
 
-#include "mongo/db/jsobj.h"
+#include <ctype.h>
+#include <stddef.h>
+#include <stdlib.h>
+#include <string.h>
+#include <limits>
+#include <list>
+#include <ostream>
+#include <set>
+#include <string>
+#include <vector>
 
+#include "base/error_codes.h"
+#include "base/status.h"
+#include "base/status-inl.h"
+#include "base/string_data.h"
+#include "base/string_data-inl.h"
+#include "bson/bsonelement.h"
+#include "bson/bsonobj.h"
+#include "bson/bsonobjbuilder.h"
+#include "bson/bsonobjiterator.h"
+#include "bson/bsontypes.h"
+#include "bson/oid.h"
+#include "bson/ordering.h"
+#include "bson/util/builder.h"
+#include "logger/log_component.h"
+#include "logger/logstream_builder.h"
 #include "mongo/bson/bson_validate.h"
 #include "mongo/db/json.h"
 #include "mongo/util/hex.h"
 #include "mongo/util/log.h"
 #include "mongo/util/md5.hpp"
 #include "mongo/util/mongoutils/str.h"
+#include "util/assert_util.h"
+#include "util/md5.h"
 
 namespace mongo {
     using namespace std;

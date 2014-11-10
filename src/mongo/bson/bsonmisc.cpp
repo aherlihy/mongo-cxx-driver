@@ -13,7 +13,18 @@
  *    limitations under the License.
  */
 
-#include "mongo/db/jsobj.h"
+#include <string.h>
+#include <memory>
+
+#include "base/string_data.h"
+#include "bson/bsonelement.h"
+#include "bson/bsonmisc.h"
+#include "bson/bsonobj.h"
+#include "bson/bsonobjbuilder.h"
+#include "bson/bsonobjiterator.h"
+#include "bson/bsontypes.h"
+#include "bson/util/builder.h"
+#include "util/assert_util.h"
 
 namespace mongo {
 

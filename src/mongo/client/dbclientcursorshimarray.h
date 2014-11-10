@@ -15,8 +15,9 @@
 
 #pragma once
 
-#include "mongo/client/dbclientcursorshim.h"
+#include "bson/bsonobj.h"
 #include "mongo/bson/bsonobjiterator.h"
+#include "mongo/client/dbclientcursorshim.h"
 
 namespace mongo  {
 

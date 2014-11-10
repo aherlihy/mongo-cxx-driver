@@ -13,8 +13,7 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
-
+#include "logger/log_component_settings.h"
 #include "mongo/logger/component_message_log_domain.h"
 
 namespace mongo {

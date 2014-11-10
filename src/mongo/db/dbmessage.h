@@ -17,11 +17,26 @@
 
 #pragma once
 
+#include <boost/static_assert.hpp>
+#include <stddef.h>
+#include <sys/_types/_int32_t.h>
+#include <sys/_types/_int64_t.h>
+#include <iosfwd>
+
+#include "base/data_view.h"
+#include "base/encoded_value_storage.h"
+#include "bson/bsonobj.h"
 #include "mongo/bson/bson_validate.h"
 #include "mongo/client/constants.h"
 #include "mongo/db/jsobj.h"
 #include "mongo/util/net/message.h"
 #include "mongo/util/net/message_port.h"
+#include "platform/cstdint.h"
+#include "util/net/operation.h"
+
+namespace mongo {
+class AbstractMessagingPort;
+}  // namespace mongo
 
 namespace mongo {
 

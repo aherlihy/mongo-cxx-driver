@@ -13,18 +13,23 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
+#include <stddef.h>
 
-#include "mongo/client/sasl_client_authenticate.h"
-
-#include <string>
-
-#include "mongo/base/string_data.h"
+#include "base/error_codes.h"
+#include "base/status.h"
+#include "base/status-inl.h"
+#include "bson/bsonelement.h"
+#include "bson/bsonobj.h"
+#include "bson/bsontypes.h"
 #include "mongo/bson/util/bson_extract.h"
+#include "mongo/client/sasl_client_authenticate.h"
 #include "mongo/util/base64.h"
 #include "mongo/util/mongoutils/str.h"
+#include "util/assert_util.h"
 
 namespace mongo {
+
+class DBClientWithCommands;
 
     using namespace mongoutils;
 

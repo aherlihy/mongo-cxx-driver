@@ -13,14 +13,20 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
-
-#include "mongo/logger/log_component.h"
-
 #include <boost/static_assert.hpp>
+#include <stddef.h>
+#include <string>
 
+#include "base/status.h"
+#include "base/status-inl.h"
+#include "base/string_data.h"
 #include "mongo/base/init.h"
+#include "mongo/logger/log_component.h"
 #include "mongo/util/assert_util.h"
+
+namespace mongo {
+class InitializerContext;
+}  // namespace mongo
 
 namespace mongo {
 namespace logger {

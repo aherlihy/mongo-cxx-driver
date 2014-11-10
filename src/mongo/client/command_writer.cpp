@@ -13,13 +13,20 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
+#include <boost/next_prior.hpp>
+#include <boost/smart_ptr/scoped_ptr.hpp>
+#include <iterator>
 
+#include "bson/bsonobjbuilder.h"
+#include "client/exceptions.h"
+#include "client/write_concern.h"
+#include "client/write_operation.h"
 #include "mongo/client/command_writer.h"
-
 #include "mongo/client/dbclientinterface.h"
 #include "mongo/client/write_result.h"
 #include "mongo/db/namespace_string.h"
+#include "util/assert_util.h"
+#include "util/net/operation.h"
 
 namespace mongo {
 

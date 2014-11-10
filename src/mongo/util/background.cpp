@@ -17,23 +17,29 @@
 
 #define MONGO_LOG_DEFAULT_COMPONENT ::mongo::logger::LogComponent::kCommands
 
-#include "mongo/platform/basic.h"
+#include <boost/bind/bind.hpp>
+#include <boost/thread/detail/thread.hpp>
+#include <boost/thread/lock_guard.hpp>
+#include <boost/thread/lock_types.hpp>
+#include <boost/thread/pthread/condition_variable.hpp>
+#include <boost/thread/pthread/condition_variable_fwd.hpp>
+#include <boost/thread/pthread/mutex.hpp>
+#include <boost/thread/xtime.hpp>
+#include <exception>
+#include <ostream>
+#include <string>
 
+#include "base/error_codes.h"
+#include "base/status.h"
+#include "base/status-inl.h"
+#include "logger/log_component.h"
+#include "logger/logstream_builder.h"
 #include "mongo/util/background.h"
-
-#include <boost/thread/condition.hpp>
-#include <boost/thread/mutex.hpp>
-#include <boost/thread/once.hpp>
-#include <boost/thread/thread.hpp>
-
-#include "mongo/stdx/functional.h"
 #include "mongo/util/concurrency/thread_name.h"
-#include "mongo/util/debug_util.h"
 #include "mongo/util/log.h"
 #include "mongo/util/mongoutils/str.h"
-#include "mongo/util/net/ssl_manager.h"
 #include "mongo/util/time_support.h"
-#include "mongo/util/timer.h"
+#include "util/assert_util.h"
 
 using namespace std;
 namespace mongo {

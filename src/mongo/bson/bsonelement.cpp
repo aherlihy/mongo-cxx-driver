@@ -17,12 +17,32 @@
 
 #include "mongo/bson/bsonelement.h"
 
+#include <_types/_uint8_t.h>
+#include <stdlib.h>
+#include <algorithm>
+#include <ostream>
+#include <string>
+
+#include "base/parse_number.h"
+#include "base/status.h"
+#include "base/status-inl.h"
+#include "bson/bsonobj.h"
+#include "bson/bsonobjbuilder.h"
+#include "bson/bsonobjiterator.h"
+#include "bson/bsontypes.h"
+#include "bson/oid.h"
+#include "bson/timestamp.h"
+#include "bson/util/misc.h"
+#include "logger/log_component.h"
+#include "logger/logstream_builder.h"
 #include "mongo/base/data_cursor.h"
-#include "mongo/db/jsobj.h"
 #include "mongo/util/base64.h"
 #include "mongo/util/hex.h"
 #include "mongo/util/log.h"
 #include "mongo/util/mongoutils/str.h"
+#include "platform/compiler_gcc.h"
+#include "platform/cstdint.h"
+#include "platform/float_utils.h"
 
 namespace mongo {
 

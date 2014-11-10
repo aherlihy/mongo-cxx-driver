@@ -15,9 +15,12 @@
 
 #pragma once
 
+#include <iosfwd>
 #include <string>
-#include <vector>
+#include <unordered_map>
+#include <unordered_set>
 #include <utility>
+#include <vector>
 
 #include "mongo/base/disallow_copying.h"
 #include "mongo/base/initializer_function.h"

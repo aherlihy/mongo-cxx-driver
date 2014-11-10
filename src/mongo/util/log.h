@@ -31,6 +31,12 @@
 #else  // MONGO_UTIL_LOG_H_
 #define MONGO_UTIL_LOG_H_
 
+#include <stddef.h>
+#include <iosfwd>
+
+#include "logger/component_message_log_domain.h"
+#include "logger/log_severity.h"
+#include "logger/log_severity-inl.h"
 #include "mongo/base/status.h"
 #include "mongo/bson/util/builder.h"
 #include "mongo/logger/log_component.h"
@@ -38,6 +44,13 @@
 #include "mongo/logger/logstream_builder.h"
 #include "mongo/logger/tee.h"
 #include "mongo/util/concurrency/thread_name.h"
+
+namespace mongo {
+namespace logger {
+class LabeledLevel;
+class Tee;
+}  // namespace logger
+}  // namespace mongo
 
 // Provide log component in global scope so that MONGO_LOG will always have a valid component.
 // Global log component will be kDefault unless overridden by MONGO_LOG_DEFAULT_COMPONENT.

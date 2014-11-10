@@ -15,13 +15,24 @@
  *    limitations under the License.
  */
 
+#include <sys/_types/_int32_t.h>
+#include <sys/_types/_int64_t.h>
+#include <sys/types.h>
 #include <cstring>
 #include <deque>
+#include <iosfwd>
+#include <string>
 
+#include "base/error_codes.h"
+#include "base/status.h"
+#include "base/status-inl.h"
+#include "base/string_data.h"
+#include "bson/bsonelement.h"
+#include "bson/bsontypes.h"
 #include "mongo/base/data_view.h"
 #include "mongo/bson/bson_validate.h"
 #include "mongo/bson/oid.h"
-#include "mongo/db/jsobj.h"
+#include "platform/cstdint.h"
 
 namespace mongo {
 

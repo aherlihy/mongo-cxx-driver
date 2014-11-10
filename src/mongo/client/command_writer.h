@@ -15,7 +15,19 @@
 
 #pragma once
 
+#include <vector>
+
+#include "base/string_data.h"
+#include "bson/bsonobj.h"
 #include "mongo/client/dbclient_writer.h"
+
+namespace mongo {
+class BSONArrayBuilder;
+class BSONObjBuilder;
+class WriteConcern;
+class WriteOperation;
+class WriteResult;
+}  // namespace mongo
 
 namespace mongo {
 

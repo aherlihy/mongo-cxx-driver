@@ -13,6 +13,10 @@
  *    limitations under the License.
  */
 
+#include <stdlib.h>
+#include <iostream>
+
+#include "base/status.h"
 #include "gtest/gtest.h"
 #include "mongo/client/init.h"
 

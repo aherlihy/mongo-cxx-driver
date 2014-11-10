@@ -15,11 +15,9 @@
 
 #define MONGO_LOG_DEFAULT_COMPONENT ::mongo::logger::LogComponent::kDefault;
 
-#include "mongo/platform/basic.h"
-
-#include "mongo/client/private/options.h"
+#include "logger/log_component.h"
+#include "logger/log_severity-inl.h"
 #include "mongo/client/options.h"
-#include "mongo/util/log.h"
 
 namespace mongo {
 namespace client {

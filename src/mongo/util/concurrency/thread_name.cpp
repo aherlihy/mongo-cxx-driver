@@ -13,12 +13,11 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
-
-#include "mongo/platform/compiler.h"
-#include "mongo/util/concurrency/thread_name.h"
-
 #include <boost/thread/tss.hpp>
+#include <string>
+
+#include "base/string_data.h"
+#include "mongo/util/concurrency/thread_name.h"
 
 namespace mongo {
 

@@ -17,17 +17,21 @@
 
 #pragma once
 
+#include <exception>
 #include <iostream>
-#include <typeinfo>
 #include <string>
+#include <typeinfo>
 
+#include "base/error_codes.h"
+#include "base/status-inl.h"
 #include "mongo/base/status.h" // NOTE: This is safe as utils depend on base
 #include "mongo/client/export_macros.h"
-#include "mongo/platform/compiler.h"
 #include "mongo/logger/log_severity.h"
 #include "mongo/logger/logger.h"
 #include "mongo/logger/logstream_builder.h"
+#include "mongo/platform/compiler.h"
 #include "mongo/util/concurrency/thread_name.h"
+#include "platform/compiler_gcc.h"
 
 namespace mongo {
 
@@ -76,6 +80,7 @@ namespace mongo {
     };
 
     class DBException;
+
     MONGO_CLIENT_API std::string MONGO_CLIENT_FUNC causedBy( const DBException& e );
     MONGO_CLIENT_API std::string MONGO_CLIENT_FUNC causedBy( const std::string& e );
 

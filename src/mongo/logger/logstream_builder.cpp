@@ -13,20 +13,29 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
+#include <stdlib.h>
+#include <string>
+#include <vector>
 
-#include "mongo/logger/logstream_builder.h"
-
+#include "base/disallow_copying.h"
+#include "base/status-inl.h"
+#include "logger/labeled_level.h"
+#include "logger/log_component.h"
+#include "logger/log_severity.h"
+#include "logger/message_event.h"
+#include "logger/message_log_domain.h"
 #include "mongo/base/init.h"
 #include "mongo/base/owned_pointer_vector.h"
 #include "mongo/base/status.h"
+#include "mongo/logger/logstream_builder.h"
 #include "mongo/logger/message_event_utf8_encoder.h"
 #include "mongo/logger/tee.h"
-#include "mongo/util/assert_util.h"  // TODO: remove apple dep for this in threadlocal.h
 #include "mongo/util/concurrency/threadlocal.h"
 #include "mongo/util/time_support.h"
 
 namespace mongo {
+
+class InitializerContext;
 
 namespace {
 

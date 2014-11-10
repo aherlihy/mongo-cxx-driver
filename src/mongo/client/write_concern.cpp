@@ -13,8 +13,7 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
-
+#include "bson/bsonobjbuilder.h"
 #include "mongo/client/write_concern.h"
 #include "mongo/util/assert_util.h"
 

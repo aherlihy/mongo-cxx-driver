@@ -17,18 +17,34 @@
 
 #include "mongo/db/json.h"
 
-#include <boost/scoped_ptr.hpp>
-#include <cerrno>
+#include <_types/_uint32_t.h>
+#include <boost/smart_ptr/scoped_ptr.hpp>
+#include <ctype.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/_types/_int32_t.h>
+#include <sys/_types/_int64_t.h>
+#include <sys/errno.h>
+#include <exception>
+#include <limits>
+#include <ostream>
+#include <string>
 
+#include "base/error_codes.h"
+#include "base/status.h"
+#include "base/status-inl.h"
+#include "base/status_with.h"
+#include "bson/bsonobj.h"
+#include "bson/bsonobjbuilder.h"
+#include "bson/bsontypes.h"
+#include "bson/timestamp.h"
+#include "logger/log_component.h"
 #include "mongo/base/parse_number.h"
-#include "mongo/db/jsobj.h"
 #include "mongo/platform/cstdint.h"
-#include "mongo/platform/strtoll.h"
 #include "mongo/util/base64.h"
 #include "mongo/util/hex.h"
-#include "mongo/util/log.h"
-#include "mongo/util/mongoutils/str.h"
 #include "mongo/util/time_support.h"
+#include "util/assert_util.h"
 
 namespace mongo {
 

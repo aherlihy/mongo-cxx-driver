@@ -9,6 +9,12 @@
 
 #include "MurmurHash3.h"
 
+#include <_types/_uint64_t.h>
+#include <_types/_uint8_t.h>
+#include <stdint.h>
+
+#include "third_party/murmurhash3/MurmurHash3.h"
+
 //-----------------------------------------------------------------------------
 // Platform-specific functions and macros
 

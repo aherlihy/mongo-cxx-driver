@@ -15,6 +15,7 @@
 
 #pragma once
 
+#include "client/export_macros.h"
 #include "mongo/bson/bsonobj.h"
 
 namespace mongo {

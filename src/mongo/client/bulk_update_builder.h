@@ -15,8 +15,13 @@
 
 #pragma once
 
+#include "client/export_macros.h"
 #include "mongo/bson/bsonobj.h"
 #include "mongo/client/bulk_upsert_builder.h"
+
+namespace mongo {
+class BSONObj;
+}  // namespace mongo
 
 namespace mongo {
 

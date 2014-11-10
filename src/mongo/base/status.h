@@ -18,9 +18,11 @@
 #include <iosfwd>
 #include <string>
 
+#include "base/string_data.h"
 #include "mongo/base/error_codes.h"
 #include "mongo/client/export_macros.h"
 #include "mongo/platform/atomic_word.h"
+#include "platform/atomic_word_intrinsics.h"
 
 namespace mongo {
 

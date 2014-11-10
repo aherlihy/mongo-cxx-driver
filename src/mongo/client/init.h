@@ -17,6 +17,8 @@
 
 #pragma once
 
+#include "base/disallow_copying.h"
+#include "base/status-inl.h"
 #include "mongo/base/status.h"
 #include "mongo/client/export_macros.h"
 #include "mongo/client/options.h"

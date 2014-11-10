@@ -15,22 +15,21 @@
 
 #define MONGO_LOG_DEFAULT_COMPONENT ::mongo::logger::LogComponent::kDefault
 
-#include "mongo/platform/basic.h"
+#include <string.h>
+#include <sys/errno.h>
+#include <ostream>
 
+#include "base/error_codes.h"
+#include "base/status.h"
+#include "base/status-inl.h"
+#include "logger/log_component.h"
+#include "logger/logstream_builder.h"
 #include "mongo/util/log.h"
 
 #ifdef _WIN32
 #include <io.h>
 #else
-#include <unistd.h>
-#include <cerrno>
 #endif
-
-#include "mongo/util/assert_util.h"
-#include "mongo/util/concurrency/threadlocal.h"
-#include "mongo/util/concurrency/thread_name.h"
-#include "mongo/util/text.h"
-#include "mongo/util/time_support.h"
 
 using namespace std;
 

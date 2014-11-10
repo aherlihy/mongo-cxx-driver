@@ -15,12 +15,20 @@
 
 #pragma once
 
+#include <iosfwd>
 #include <string>
-#include <vector>
 #include <utility>
+#include <vector>
 
+#include "bson/bsonobj.h"
+#include "bson/bsonobjbuilder.h"
 #include "mongo/client/export_macros.h"
 #include "mongo/db/jsobj.h"
+#include "platform/compiler.h"
+
+namespace mongo {
+class BSONElement;
+}  // namespace mongo
 
 namespace mongo {
 

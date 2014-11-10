@@ -20,6 +20,8 @@
 #include <sstream>
 #include <string>
 
+#include "base/string_data.h"
+#include "logger/log_severity-inl.h"
 #include "mongo/client/export_macros.h"
 #include "mongo/logger/labeled_level.h"
 #include "mongo/logger/log_component.h"

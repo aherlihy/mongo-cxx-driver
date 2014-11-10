@@ -17,31 +17,23 @@
 
 #define MONGO_LOG_DEFAULT_COMPONENT ::mongo::logger::LogComponent::kNetworking
 
-#include "mongo/platform/basic.h"
-
-#include "mongo/util/net/message_port.h"
-
-#include <boost/thread/locks.hpp>
-#include <boost/thread/mutex.hpp>
-#include <fcntl.h>
+#include <boost/thread/lock_guard.hpp>
+#include <boost/thread/pthread/mutex.hpp>
+#include <stddef.h>
+#include <stdlib.h>
+#include <string.h>
+#include <__tree>
+#include <ostream>
 #include <set>
-#include <time.h>
 
-#include "mongo/client/options.h"
-#include "mongo/util/background.h"
+#include "logger/log_component.h"
+#include "logger/logstream_builder.h"
 #include "mongo/util/log.h"
 #include "mongo/util/net/message.h"
-#include "mongo/util/net/ssl_manager.h"
+#include "mongo/util/net/message_port.h"
 #include "mongo/util/scopeguard.h"
-#include "mongo/util/time_support.h"
-
-#ifndef _WIN32
-# ifndef __sunos__
-#  include <ifaddrs.h>
-# endif
-# include <sys/resource.h>
-# include <sys/stat.h>
-#endif
+#include "util/assert_util.h"
+#include "util/net/sock.h"
 
 namespace mongo {
 

@@ -15,26 +15,11 @@
 
 #define MONGO_LOG_DEFAULT_COMPONENT ::mongo::logger::LogComponent::kNetworking
 
-#include "mongo/platform/basic.h"
-
-#include "mongo/util/net/ssl_manager.h"
-
-#include <boost/thread/locks.hpp>
-#include <boost/thread/mutex.hpp>
-#include <boost/thread/recursive_mutex.hpp>
-#include <boost/thread/tss.hpp>
 #include <ostream>
-#include <string>
-#include <vector>
 
+#include "logger/log_component.h"
 #include "mongo/base/init.h"
-#include "mongo/platform/atomic_word.h"
-#include "mongo/client/options.h"
-#include "mongo/util/debug_util.h"
-#include "mongo/util/log.h"
-#include "mongo/util/mongoutils/str.h"
-#include "mongo/util/net/sock.h"
-#include "mongo/util/scopeguard.h"
+#include "mongo/util/net/ssl_manager.h"
 
 #ifdef MONGO_SSL
 #include <openssl/evp.h>

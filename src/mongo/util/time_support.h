@@ -17,15 +17,27 @@
 
 #pragma once
 
-#include <iosfwd>
-#include <ctime>
-#include <string>
+#include <boost/date_time/gregorian/greg_date.hpp>
+#include <boost/date_time/posix_time/posix_time_duration.hpp>
 #include <boost/date_time/posix_time/posix_time_types.hpp>
 #include <boost/thread/xtime.hpp>
 #include <boost/version.hpp>
+#include <sys/_types/_int64_t.h>
+#include <sys/_types/_time_t.h>
+#include <ctime>
+#include <iosfwd>
+#include <string>
 
+#include "base/string_data.h"
 #include "mongo/base/status_with.h"
 #include "mongo/client/export_macros.h"
+
+namespace boost {
+namespace posix_time {
+class ptime;
+}  // namespace posix_time
+}  // namespace boost
+struct tm;
 
 namespace mongo {
 

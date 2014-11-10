@@ -17,12 +17,23 @@
 
 #pragma once
 
-#include "boost/scoped_array.hpp"
+#include <boost/smart_ptr/scoped_array.hpp>
+#include <math.h>
+#include <stddef.h>
+#include <iosfwd>
+#include <memory>
 
+#include "boost/scoped_array.hpp"
+#include "bson/oid.h"
 #include "mongo/bson/bsonelement.h"
 #include "mongo/bson/bsonobj.h"
 #include "mongo/client/dbclientinterface.h"
 #include "mongo/client/export_macros.h"
+#include "util/time_support.h"
+
+namespace mongo {
+class DBClientCursor;
+}  // namespace mongo
 
 namespace mongo {
 

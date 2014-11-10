@@ -15,8 +15,11 @@
 
 #pragma once
 
+#include <iosfwd>
 #include <string>
+#include <unordered_map>
 
+#include "logger/message_log_domain.h"
 #include "mongo/base/disallow_copying.h"
 #include "mongo/logger/component_message_log_domain.h"
 #include "mongo/platform/unordered_map.h"

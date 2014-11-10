@@ -15,12 +15,30 @@
 
 #pragma once
 
+#include <_types/_uint64_t.h>
+#include <boost/function/function_template.hpp>
 #include <boost/shared_ptr.hpp>
+#include <stddef.h>
+#include <iosfwd>
+#include <memory>
 #include <string>
 #include <vector>
 
 #include "mongo/client/dbclientinterface.h"
 #include "mongo/dbtests/mock/mock_remote_db_server.h"
+#include "platform/cstdint.h"
+#include "util/net/hostandport.h"
+
+namespace boost {
+template <typename Signature> class function;
+}  // namespace boost
+namespace mongo {
+class BSONObj;
+class DBClientCursor;
+class DBClientCursorBatchIterator;
+class Message;
+class WriteConcern;
+}  // namespace mongo
 
 namespace mongo {
     /**

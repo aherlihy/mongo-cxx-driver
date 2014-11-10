@@ -16519,3 +16519,246 @@ warning: -lboost_system-mt: 'linker' input unused
 warning: argument unused during compilation: '-fPIC'
 warning: argument unused during compilation: '-mmacosx-version-min=10.9'
 error: unable to handle compilation, expected exactly one compiler job in ''
+
+(build/scons/sconf_temp/conftest_0.cpp has correct #includes/fwd-decls)
+build/scons/sconf_temp/conftest_2.cpp:3:2: error: 
+#error
+ ^
+
+(build/scons/sconf_temp/conftest_2.cpp has correct #includes/fwd-decls)
+build/scons/sconf_temp/conftest_11.cpp:4:2: error: 
+#error
+ ^
+
+build/scons/sconf_temp/conftest_11.cpp should add these lines:
+
+build/scons/sconf_temp/conftest_11.cpp should remove these lines:
+- #include <vector>  // lines 2-2
+
+The full include-list for build/scons/sconf_temp/conftest_11.cpp:
+---
+build/scons/sconf_temp/conftest_12.cpp:4:2: error: libstdcxx older than 4.6.0
+#error libstdcxx older than 4.6.0
+ ^
+
+build/scons/sconf_temp/conftest_12.cpp should add these lines:
+
+build/scons/sconf_temp/conftest_12.cpp should remove these lines:
+- #include <vector>  // lines 2-2
+
+The full include-list for build/scons/sconf_temp/conftest_12.cpp:
+---
+
+(build/scons/sconf_temp/conftest_15.cpp has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_16.cpp has correct #includes/fwd-decls)
+error: no such file or directory: 'build/scons/sconf_temp/conftest_16.o'
+warning: -Wl,-bind_at_load: 'linker' input unused
+error: unable to handle compilation, expected exactly one compiler job in ''
+
+build/scons/sconf_temp/conftest_17.cpp should add these lines:
+
+build/scons/sconf_temp/conftest_17.cpp should remove these lines:
+- #include "boost/version.hpp"  // lines 2-2
+
+The full include-list for build/scons/sconf_temp/conftest_17.cpp:
+---
+
+(build/scons/sconf_temp/conftest_18.cpp has correct #includes/fwd-decls)
+
+(build/scons/sconf_temp/conftest_19.cpp has correct #includes/fwd-decls)
+error: no such file or directory: 'build/scons/sconf_temp/conftest_19.o'
+warning: -Wl,-bind_at_load: 'linker' input unused
+warning: -lboost_regex-mt: 'linker' input unused
+warning: -lboost_thread-mt: 'linker' input unused
+error: unable to handle compilation, expected exactly one compiler job in ''
+
+(build/scons/sconf_temp/conftest_20.cpp has correct #includes/fwd-decls)
+error: no such file or directory: 'build/scons/sconf_temp/conftest_20.o'
+warning: -Wl,-bind_at_load: 'linker' input unused
+warning: -lboost_regex-mt: 'linker' input unused
+warning: -lboost_thread-mt: 'linker' input unused
+warning: -lboost_system-mt: 'linker' input unused
+error: unable to handle compilation, expected exactly one compiler job in ''
+
+src/mongo/unittest/client_test_main.cpp should add these lines:
+#include <stdlib.h>                     // for abort
+#include <iostream>                     // for operator<<, ostream, etc
+#include "base/status.h"                // for operator<<
+
+src/mongo/unittest/client_test_main.cpp should remove these lines:
+
+The full include-list for src/mongo/unittest/client_test_main.cpp:
+#include <stdlib.h>                     // for abort
+#include <iostream>                     // for operator<<, ostream, etc
+#include "base/status.h"                // for operator<<
+#include "gtest/gtest.h"                // for InitGoogleTest, etc
+#include "mongo/client/init.h"          // for GlobalInstance
+---
+
+(src/mongo/base/parse_number.h has correct #includes/fwd-decls)
+
+src/mongo/base/parse_number_test.cpp should add these lines:
+#include <_types/_uint16_t.h>           // for uint16_t
+#include <_types/_uint32_t.h>           // for uint32_t
+#include <_types/_uint64_t.h>           // for uint64_t
+#include <_types/_uint8_t.h>            // for uint8_t
+#include <sys/_types/_int16_t.h>        // for int16_t
+#include <sys/_types/_int32_t.h>        // for int32_t
+#include <sys/_types/_int64_t.h>        // for int64_t
+#include <sys/types.h>                  // for int8_t
+#include <iosfwd>                       // for string
+#include "base/error_codes.h"           // for ErrorCodes, etc
+#include "base/status-inl.h"            // for operator==, Status::OK
+#include "base/string_data.h"           // for StringData, etc
+#include "gtest/gtest.h"                // for AssertHelper, TEST_F, TEST, etc
+
+src/mongo/base/parse_number_test.cpp should remove these lines:
+
+The full include-list for src/mongo/base/parse_number_test.cpp:
+#include "mongo/base/parse_number.h"
+#include <_types/_uint16_t.h>           // for uint16_t
+#include <_types/_uint32_t.h>           // for uint32_t
+#include <_types/_uint64_t.h>           // for uint64_t
+#include <_types/_uint8_t.h>            // for uint8_t
+#include <sys/_types/_int16_t.h>        // for int16_t
+#include <sys/_types/_int32_t.h>        // for int32_t
+#include <sys/_types/_int64_t.h>        // for int64_t
+#include <sys/types.h>                  // for int8_t
+#include <iosfwd>                       // for string
+#include <limits>                       // for numeric_limits
+#include "base/error_codes.h"           // for ErrorCodes, etc
+#include "base/status-inl.h"            // for operator==, Status::OK
+#include "base/string_data.h"           // for StringData, etc
+#include "gtest/gtest.h"                // for AssertHelper, TEST_F, TEST, etc
+#include "mongo/base/status.h"          // for operator<<, Status
+#include "mongo/platform/cstdint.h"     // for int8_t, uint8_t, int32_t, etc
+#include "mongo/platform/float_utils.h"  // for isInf, isNaN
+#include "mongo/unittest/unittest.h"    // for ASSERT_EQUALS, ASSERT_OK, etc
+#include "mongo/util/mongoutils/str.h"  // for stream
+---
+
+src/mongo/dbtests/mock/mock_dbclient_connection.h should add these lines:
+#include <_types/_uint64_t.h>           // for uint64_t
+#include <stddef.h>                     // for NULL
+#include <boost/function/function_template.hpp>  // for function
+#include <iosfwd>                       // for string
+#include <memory>                       // for auto_ptr
+#include "platform/cstdint.h"           // for uint64_t
+#include "util/net/hostandport.h"       // for HostAndPort
+namespace boost { template <typename Signature> class function; }
+namespace mongo { class BSONObj; }
+namespace mongo { class DBClientCursor; }
+namespace mongo { class DBClientCursorBatchIterator; }
+namespace mongo { class Message; }
+namespace mongo { class WriteConcern; }
+
+src/mongo/dbtests/mock/mock_dbclient_connection.h should remove these lines:
+- #include <boost/shared_ptr.hpp>  // lines 18-18
+- #include <string>  // lines 19-19
+
+The full include-list for src/mongo/dbtests/mock/mock_dbclient_connection.h:
+#include <_types/_uint64_t.h>           // for uint64_t
+#include <stddef.h>                     // for NULL
+#include <boost/function/function_template.hpp>  // for function
+#include <iosfwd>                       // for string
+#include <memory>                       // for auto_ptr
+#include <vector>                       // for vector
+#include "mongo/client/dbclientinterface.h"  // for Query, etc
+#include "mongo/dbtests/mock/mock_remote_db_server.h"
+#include "platform/cstdint.h"           // for uint64_t
+#include "util/net/hostandport.h"       // for HostAndPort
+namespace boost { template <typename Signature> class function; }
+namespace mongo { class BSONObj; }
+namespace mongo { class DBClientCursor; }
+namespace mongo { class DBClientCursorBatchIterator; }
+namespace mongo { class Message; }
+namespace mongo { class WriteConcern; }
+---
+
+src/mongo/dbtests/mock/mock_dbclient_connection.cpp should add these lines:
+#include <string>                       // for allocator, operator+, etc
+#include "bson/bsonobj.h"               // for BSONObj, BSONArray
+#include "client/dbclientcursor.h"      // for DBClientCursor, etc
+#include "client/dbclientinterface.h"   // for Query, ConnectionString, etc
+#include "dbtests/mock/mock_remote_db_server.h"  // for MockRemoteDBServer
+#include "util/assert_util.h"           // for verify
+namespace mongo { class Message; }
+namespace mongo { class SocketException; }
+namespace mongo { class WriteConcern; }
+
+src/mongo/dbtests/mock/mock_dbclient_connection.cpp should remove these lines:
+- #include "mongo/platform/basic.h"  // lines 16-16
+- #include "mongo/util/net/sock.h"  // lines 22-22
+
+The full include-list for src/mongo/dbtests/mock/mock_dbclient_connection.cpp:
+#include "mongo/dbtests/mock/mock_dbclient_connection.h"
+#include <string>                       // for allocator, operator+, etc
+#include "bson/bsonobj.h"               // for BSONObj, BSONArray
+#include "client/dbclientcursor.h"      // for DBClientCursor, etc
+#include "client/dbclientinterface.h"   // for Query, ConnectionString, etc
+#include "dbtests/mock/mock_remote_db_server.h"  // for MockRemoteDBServer
+#include "mongo/client/write_options.h"
+#include "mongo/dbtests/mock/mock_dbclient_cursor.h"
+#include "mongo/util/time_support.h"    // for curTimeMicros64
+#include "util/assert_util.h"           // for verify
+namespace mongo { class Message; }
+namespace mongo { class SocketException; }
+namespace mongo { class WriteConcern; }
+---
+
+src/mongo/dbtests/mock/mock_conn_registry.h should add these lines:
+#include <boost/thread/pthread/mutex.hpp>  // for mutex
+#include <iosfwd>                       // for string
+#include <unordered_map>                // for unordered_map
+namespace boost { template <class T> class scoped_ptr; }
+namespace mongo { class MockDBClientConnection; }
+namespace mongo { class MockRemoteDBServer; }
+
+src/mongo/dbtests/mock/mock_conn_registry.h should remove these lines:
+- #include <boost/thread/mutex.hpp>  // lines 18-18
+- #include "mongo/dbtests/mock/mock_dbclient_connection.h"  // lines 22-22
+- #include "mongo/dbtests/mock/mock_remote_db_server.h"  // lines 23-23
+- #include "mongo/platform/unordered_map.h"  // lines 24-24
+
+The full include-list for src/mongo/dbtests/mock/mock_conn_registry.h:
+#include <boost/thread/pthread/mutex.hpp>  // for mutex
+#include <iosfwd>                       // for string
+#include <unordered_map>                // for unordered_map
+#include "mongo/base/status.h"          // for Status
+#include "mongo/client/dbclientinterface.h"  // for ConnectionString, etc
+namespace boost { template <class T> class scoped_ptr; }
+namespace mongo { class MockDBClientConnection; }
+namespace mongo { class MockRemoteDBServer; }
+---
+
+src/mongo/dbtests/mock/mock_conn_registry.cpp should add these lines:
+#include <stddef.h>                     // for NULL
+#include <boost/smart_ptr/scoped_ptr.hpp>  // for scoped_ptr
+#include <boost/thread/lock_guard.hpp>  // for lock_guard
+#include <string>                       // for operator==, hash
+#include "base/status-inl.h"            // for Status::Status, etc
+#include "base/status.h"                // for Status
+#include "client/dbclientinterface.h"   // for ConnectionString, etc
+#include "dbtests/mock/mock_remote_db_server.h"  // for MockRemoteDBServer
+#include "util/assert_util.h"           // for fassert
+namespace mongo { class InitializerContext; }
+
+src/mongo/dbtests/mock/mock_conn_registry.cpp should remove these lines:
+- #include "mongo/platform/basic.h"  // lines 16-16
+
+The full include-list for src/mongo/dbtests/mock/mock_conn_registry.cpp:
+#include "mongo/dbtests/mock/mock_conn_registry.h"
+#include <stddef.h>                     // for NULL
+#include <boost/smart_ptr/scoped_ptr.hpp>  // for scoped_ptr
+#include <boost/thread/lock_guard.hpp>  // for lock_guard
+#include <string>                       // for operator==, hash
+#include "base/status-inl.h"            // for Status::Status, etc
+#include "base/status.h"                // for Status
+#include "client/dbclientinterface.h"   // for ConnectionString, etc
+#include "dbtests/mock/mock_remote_db_server.h"  // for MockRemoteDBServer
+#include "mongo/base/init.h"            // for MONGO_INITIALIZER
+#include "mongo/dbtests/mock/mock_dbclient_connection.h"
+#include "util/assert_util.h"           // for fassert
+namespace mongo { class InitializerContext; }
+---

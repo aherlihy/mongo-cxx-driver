@@ -17,9 +17,16 @@
 
 // this should never be included directly
 
+#include <ctype.h>
+#include <stddef.h>
+#include <string.h>
+#include <algorithm>
+#include <iosfwd>
 #include <stdexcept>
 
 namespace mongo {
+
+class StringData;
 
     inline int StringData::compare(const StringData& other) const {
         // Sizes might not have been computed yet.

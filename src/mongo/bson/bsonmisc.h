@@ -17,10 +17,22 @@
 
 #pragma once
 
+#include <boost/core/noncopyable.hpp>
 #include <memory>
+#include <set>
 
+#include "base/string_data.h"
+#include "bson/bsonobj.h"
+#include "bson/bsontypes.h"
+#include "bson/oid.h"
+#include "bson/util/builder.h"
 #include "mongo/bson/bsonelement.h"
 #include "mongo/client/export_macros.h"
+
+namespace mongo {
+class BSONObjBuilder;
+class BSONObjBuilderValueStream;
+}  // namespace mongo
 
 namespace mongo {
 

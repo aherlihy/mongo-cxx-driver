@@ -17,17 +17,17 @@
 
 #include "mongo/util/text.h"
 
-#include <boost/integer_traits.hpp>
-#include <boost/smart_ptr/scoped_array.hpp>
-#include <errno.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/errno.h>
 #include <sstream>
+#include <string>
+
+#include "util/assert_util.h"
 
 #ifdef _WIN32
 #include <io.h>
 #endif
-
-#include "mongo/platform/basic.h"
-#include "mongo/util/mongoutils/str.h"
 
 using namespace std;
 

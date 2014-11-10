@@ -13,14 +13,23 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
+#include <boost/smart_ptr/scoped_ptr.hpp>
+#include <boost/thread/lock_guard.hpp>
+#include <stddef.h>
+#include <string>
 
-#include "mongo/dbtests/mock/mock_conn_registry.h"
-
+#include "base/status.h"
+#include "base/status-inl.h"
+#include "client/dbclientinterface.h"
+#include "dbtests/mock/mock_remote_db_server.h"
 #include "mongo/base/init.h"
+#include "mongo/dbtests/mock/mock_conn_registry.h"
 #include "mongo/dbtests/mock/mock_dbclient_connection.h"
+#include "util/assert_util.h"
 
 namespace mongo {
+
+class InitializerContext;
 
     using std::string;
 

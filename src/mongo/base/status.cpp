@@ -15,8 +15,12 @@
 
 #include "mongo/base/status.h"
 
+#include <stddef.h>
 #include <ostream>
-#include <sstream>
+#include <string>
+
+#include "base/error_codes.h"
+#include "base/status-inl.h"
 
 namespace mongo {
 

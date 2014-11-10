@@ -22,23 +22,37 @@
 
 #define MONGO_LOG_DEFAULT_COMPONENT ::mongo::logger::LogComponent::kNetworking
 
-#include "mongo/platform/basic.h"
-
-#include <boost/scoped_ptr.hpp>
+#include <boost/function/function_template.hpp>
+#include <boost/smart_ptr/scoped_ptr.hpp>
+#include <ostream>
 #include <string>
 
+#include "base/error_codes.h"
+#include "base/status-inl.h"
+#include "bson/bson-inl.h"
+#include "bson/bsonelement.h"
+#include "bson/bsonmisc.h"
+#include "bson/bsonobj.h"
+#include "bson/bsonobjbuilder.h"
+#include "bson/bsontypes.h"
+#include "client/dbclientinterface.h"
+#include "logger/log_component.h"
+#include "logger/logstream_builder.h"
 #include "mongo/base/init.h"
 #include "mongo/base/status.h"
 #include "mongo/base/string_data.h"
 #include "mongo/bson/util/bson_extract.h"
 #include "mongo/client/sasl_client_authenticate.h"
 #include "mongo/client/sasl_client_session.h"
-#include "mongo/platform/cstdint.h"
 #include "mongo/util/base64.h"
 #include "mongo/util/log.h"
-#include "mongo/util/mongoutils/str.h"
 #include "mongo/util/net/hostandport.h"
 #include "mongo/util/password_digest.h"
+#include "util/assert_util.h"
+
+namespace mongo {
+class InitializerContext;
+}  // namespace mongo
 
 namespace mongo {
 

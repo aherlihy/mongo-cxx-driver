@@ -15,18 +15,9 @@
  *    limitations under the License.
  */
 
-#include "mongo/platform/basic.h"
-
-#include "mongo/util/timer.h"
-
-#include <ctime>
-#include <limits>
-#if defined(MONGO_HAVE_HEADER_UNISTD_H)
-#include <unistd.h>
-#endif
-
-#include "mongo/util/assert_util.h"
+#include "config.h"
 #include "mongo/util/time_support.h"
+#include "mongo/util/timer.h"
 
 namespace mongo {
 

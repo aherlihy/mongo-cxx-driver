@@ -15,7 +15,11 @@
 
 #pragma once
 
+#include <boost/function/function_template.hpp>
 #include <boost/scoped_array.hpp>
+#include <boost/smart_ptr/scoped_array.hpp>
+#include <stddef.h>
+#include <iosfwd>
 #include <string>
 
 #include "mongo/base/disallow_copying.h"

@@ -19,8 +19,11 @@
 
 #include <boost/preprocessor/cat.hpp> // like the ## operator but works with __LINE__
 
-#include "mongo/bson/bsonobj.h"
+#include "bson/bsonelement.h"
 #include "mongo/base/disallow_copying.h"
+#include "mongo/bson/bsonobj.h"
+#include "platform/compiler_gcc.h"
+#include "util/assert_util.h"
 
 namespace mongo {
 
@@ -118,6 +121,7 @@ namespace mongo {
 
     protected:
         class ElementFieldCmp;
+
         BSONIteratorSorted( const BSONObj &o, const ElementFieldCmp &cmp );
         
     private:

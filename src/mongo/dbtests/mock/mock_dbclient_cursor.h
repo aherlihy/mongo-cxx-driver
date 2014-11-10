@@ -17,8 +17,15 @@
 
 #pragma once
 
+#include <boost/smart_ptr/scoped_ptr.hpp>
+
+#include "bson/bsonobj.h"
 #include "mongo/client/dbclientcursor.h"
 #include "mongo/client/dbclientmockcursor.h"
+
+namespace mongo {
+class DBClientBase;
+}  // namespace mongo
 
 namespace mongo {
 

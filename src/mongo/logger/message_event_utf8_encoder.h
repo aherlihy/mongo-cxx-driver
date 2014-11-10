@@ -23,6 +23,12 @@
 
 namespace mongo {
 namespace logger {
+class MessageEventEphemeral;
+}  // namespace logger
+}  // namespace mongo
+
+namespace mongo {
+namespace logger {
 
     /**
      * Encoder that writes log messages of the style that MongoDB writes to console and files.

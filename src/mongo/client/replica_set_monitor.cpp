@@ -15,27 +15,56 @@
 
 #define MONGO_LOG_DEFAULT_COMPONENT ::mongo::logger::LogComponent::kNetworking
 
-#include "mongo/platform/basic.h"
-
-#include "mongo/client/replica_set_monitor.h"
-
+#include <_types/_uint64_t.h>
+#include <boost/date_time/posix_time/posix_time_duration.hpp>
+#include <boost/smart_ptr/make_shared_object.hpp>
+#include <boost/smart_ptr/scoped_ptr.hpp>
+#include <boost/thread/detail/thread.hpp>
+#include <boost/thread/lock_guard.hpp>
+#include <boost/thread/lock_types.hpp>
+#include <boost/thread/pthread/condition_variable.hpp>
+#include <boost/thread/pthread/condition_variable_fwd.hpp>
+#include <boost/thread/pthread/mutex.hpp>
+#include <time.h>
+#include <__hash_table>
+#include <__tree>
 #include <algorithm>
+#include <deque>
+#include <exception>
+#include <iterator>
 #include <limits>
+#include <string>
+#include <unordered_map>
+#include <utility>
+#include <vector>
 
-#include <boost/make_shared.hpp>
-#include <boost/scoped_ptr.hpp>
-#include <boost/thread.hpp>
-#include <boost/thread/condition.hpp>
-#include <boost/thread/mutex.hpp>
-
+#include "base/disallow_copying.h"
+#include "base/error_codes.h"
+#include "base/status-inl.h"
+#include "base/string_data.h"
+#include "bson/bsonelement.h"
+#include "bson/bsonobj.h"
+#include "bson/bsonobjbuilder.h"
+#include "bson/bsonobjiterator.h"
+#include "bson/util/builder.h"
+#include "client/dbclient_rs.h"
+#include "client/dbclientinterface.h"
+#include "logger/log_component.h"
+#include "logger/logstream_builder.h"
 #include "mongo/client/options.h"
-#include "mongo/client/private/options.h"
+#include "mongo/client/replica_set_monitor.h"
 #include "mongo/client/replica_set_monitor_internal.h"
 #include "mongo/util/background.h"
 #include "mongo/util/debug_util.h"
 #include "mongo/util/log.h"
 #include "mongo/util/string_map.h"
 #include "mongo/util/timer.h"
+#include "platform/random.h"
+#include "util/assert_util.h"
+#include "util/mongoutils/str.h"
+#include "util/net/hostandport.h"
+#include "util/unordered_fast_key_table.h"
+#include "util/unordered_fast_key_table_internal.h"
 
 #if 0 // enable this to ease debugging of this file.
 #undef DEV

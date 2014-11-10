@@ -18,8 +18,9 @@
 
 #pragma once
 
-#include <vector>
+#include <iosfwd>
 #include <string>
+#include <vector>
 
 #include "mongo/base/disallow_copying.h"
 

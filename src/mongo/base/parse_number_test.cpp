@@ -13,14 +13,27 @@
  *    limitations under the License.
  */
 
+#include <_types/_uint16_t.h>
+#include <_types/_uint32_t.h>
+#include <_types/_uint64_t.h>
+#include <_types/_uint8_t.h>
+#include <sys/_types/_int16_t.h>
+#include <sys/_types/_int32_t.h>
+#include <sys/_types/_int64_t.h>
+#include <sys/types.h>
+#include <iosfwd>
 #include <limits>
 
+#include "base/error_codes.h"
+#include "base/status-inl.h"
+#include "base/string_data.h"
+#include "gtest/gtest.h"
 #include "mongo/base/parse_number.h"
 #include "mongo/base/status.h"
 #include "mongo/platform/cstdint.h"
 #include "mongo/platform/float_utils.h"
-#include "mongo/util/mongoutils/str.h"  // for str::stream()!
 #include "mongo/unittest/unittest.h"
+#include "mongo/util/mongoutils/str.h"  // for str::stream()!
 
 #define ASSERT_PARSES(TYPE, INPUT_STRING, EXPECTED_VALUE) do {  \
         TYPE v;                                                 \
