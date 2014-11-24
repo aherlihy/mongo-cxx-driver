@@ -1,0 +1,487 @@
+[
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/base/initializer_context.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/base/initializer_context.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/base/initializer_context.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/base/make_string_vector.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/base/make_string_vector.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/base/make_string_vector.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/base/initializer_dependency_graph.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/base/initializer_dependency_graph.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/base/initializer_dependency_graph.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/base/init.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/base/init.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/base/init.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/base/initializer.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/base/initializer.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/base/initializer.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/base/global_initializer.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/base/global_initializer.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/base/global_initializer.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/base/global_initializer_registerer.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/base/global_initializer_registerer.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/base/global_initializer_registerer.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/base/error_codes.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo build/linux2/normal/mongo/base/error_codes.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/build/linux2/normal/mongo/base/error_codes.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/base/parse_number.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/base/parse_number.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/base/parse_number.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/base/status.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/base/status.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/base/status.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/base/string_data.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/base/string_data.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/base/string_data.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/bson/bson_validate.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/bson/bson_validate.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/bson/bson_validate.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/bson/bsonelement.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/bson/bsonelement.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/bson/bsonelement.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/bson/bsonmisc.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/bson/bsonmisc.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/bson/bsonmisc.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/bson/bsonobj.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/bson/bsonobj.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/bson/bsonobj.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/bson/bsonobjbuilder.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/bson/bsonobjbuilder.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/bson/bsonobjbuilder.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/bson/bsonobjiterator.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/bson/bsonobjiterator.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/bson/bsonobjiterator.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/bson/bsontypes.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/bson/bsontypes.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/bson/bsontypes.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/bson/oid.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/bson/oid.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/bson/oid.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/bson/util/bson_extract.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/bson/util/bson_extract.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/bson/util/bson_extract.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/bulk_operation_builder.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/bulk_operation_builder.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/bulk_operation_builder.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/bulk_update_builder.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/bulk_update_builder.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/bulk_update_builder.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/bulk_upsert_builder.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/bulk_upsert_builder.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/bulk_upsert_builder.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/command_writer.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/command_writer.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/command_writer.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/dbclient.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/dbclient.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/dbclient.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/dbclient_rs.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/dbclient_rs.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/dbclient_rs.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/dbclientcursor.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/dbclientcursor.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/dbclientcursor.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/dbclientcursorshimarray.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/dbclientcursorshimarray.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/dbclientcursorshimarray.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/dbclientcursorshimcursorid.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/dbclientcursorshimcursorid.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/dbclientcursorshimcursorid.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/delete_write_operation.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/delete_write_operation.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/delete_write_operation.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/exceptions.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/exceptions.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/exceptions.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/gridfs.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/gridfs.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/gridfs.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/index_spec.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/index_spec.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/index_spec.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/init.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/init.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/init.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/insert_write_operation.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/insert_write_operation.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/insert_write_operation.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/options.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/options.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/options.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/replica_set_monitor.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/replica_set_monitor.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/replica_set_monitor.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/sasl_client_authenticate.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/sasl_client_authenticate.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/sasl_client_authenticate.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/update_write_operation.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/update_write_operation.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/update_write_operation.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/wire_protocol_writer.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/wire_protocol_writer.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/wire_protocol_writer.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/write_concern.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/write_concern.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/write_concern.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/write_operation_base.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/write_operation_base.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/write_operation_base.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/client/write_result.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/client/write_result.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/client/write_result.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/db/dbmessage.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/db/dbmessage.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/db/dbmessage.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/db/json.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/db/json.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/db/json.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/geo/coordinates2d.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/geo/coordinates2d.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/geo/coordinates2d.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/geo/coordinates2dgeographic.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/geo/coordinates2dgeographic.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/geo/coordinates2dgeographic.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/logger/component_message_log_domain.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/logger/component_message_log_domain.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/logger/component_message_log_domain.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/logger/log_component.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/logger/log_component.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/logger/log_component.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/logger/log_component_settings.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/logger/log_component_settings.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/logger/log_component_settings.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/logger/log_manager.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/logger/log_manager.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/logger/log_manager.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/logger/log_severity.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/logger/log_severity.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/logger/log_severity.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/logger/logger.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/logger/logger.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/logger/logger.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/logger/logstream_builder.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/logger/logstream_builder.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/logger/logstream_builder.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/logger/message_event_utf8_encoder.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/logger/message_event_utf8_encoder.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/logger/message_event_utf8_encoder.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/logger/message_log_domain.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/logger/message_log_domain.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/logger/message_log_domain.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/platform/process_id.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/platform/process_id.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/platform/process_id.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/platform/random.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/platform/random.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/platform/random.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/util/assert_util.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/util/assert_util.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/util/assert_util.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/util/background.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/util/background.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/util/background.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/util/base64.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/util/base64.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/util/base64.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/util/concurrency/synchronization.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/util/concurrency/synchronization.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/util/concurrency/synchronization.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/util/concurrency/thread_name.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/util/concurrency/thread_name.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/util/concurrency/thread_name.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/util/fail_point.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/util/fail_point.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/util/fail_point.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/util/fail_point_registry.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/util/fail_point_registry.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/util/fail_point_registry.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/util/fail_point_service.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/util/fail_point_service.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/util/fail_point_service.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/util/hex.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/util/hex.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/util/hex.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/util/log.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/util/log.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/util/log.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/util/md5.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/util/md5.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/util/md5.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/util/net/hostandport.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/util/net/hostandport.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/util/net/hostandport.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/util/net/message.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/util/net/message.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/util/net/message.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/util/net/message_port.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/util/net/message_port.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/util/net/message_port.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/util/net/sock.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/util/net/sock.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/util/net/sock.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/util/net/socket_poll.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/util/net/socket_poll.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/util/net/socket_poll.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/util/net/ssl_manager.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/util/net/ssl_manager.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/util/net/ssl_manager.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/util/password_digest.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/util/password_digest.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/util/password_digest.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/util/stringutils.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/util/stringutils.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/util/stringutils.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/util/text.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/util/text.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/util/text.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/util/time_support.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/util/time_support.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/util/time_support.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/mongo/util/timer.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/mongo/util/timer.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/mongo/util/timer.cpp"
+}
+,
+{
+  "directory": "/home/ubuntu/mongo-cxx-driver",
+  "command": "g++ -o build/linux2/normal/third_party/murmurhash3/MurmurHash3.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -DMONGO_EXPOSE_MACROS -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_USES_DATETIME -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_POSIX_MONOTONIC_CLOCK -DMONGO_HAVE_TIMEGM -DLIBMONGOCLIENT_BUILDING -DSTATIC_LIBMONGOCLIENT -Ibuild/linux2/normal/third_party/gtest-1.7.0/include -Isrc/third_party/gtest-1.7.0/include -Ibuild/linux2/normal -Isrc -Ibuild/linux2/normal/mongo -Isrc/mongo src/third_party/murmurhash3/MurmurHash3.cpp",
+  "file": "/home/ubuntu/mongo-cxx-driver/src/third_party/murmurhash3/MurmurHash3.cpp"
+}
+]
