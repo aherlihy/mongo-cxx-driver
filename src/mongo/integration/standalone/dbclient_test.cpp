@@ -68,7 +68,7 @@ namespace {
         return (serverMajor >= major && serverMinor >= minor);
     }
 
-    bool serverStorageEngine(DBClientBase& c, const StringData& engineName) {
+    bool serverStorageEngine(DBClientBase& c, StringData) {
         BSONObj result;
         c.runCommand("admin", BSON("serverStatus" << true), result);
 

@@ -1116,13 +1116,13 @@ namespace mongo {
     }
 
     void DBClientWithCommands::group(
-        const StringData& ns,
-        const StringData& jsreduce,
+        StringData,
+        StringData,
         std::vector<BSONObj>* output,
         const BSONObj& initial,
         const Query& query,
         const BSONObj& key,
-        const StringData& finalize
+        StringData
     ) {
         BSONObjBuilder groupObjBuilder;
         _buildGroupObj(ns, jsreduce, initial, query, finalize, &groupObjBuilder);
@@ -1134,13 +1134,13 @@ namespace mongo {
     }
 
     void DBClientWithCommands::groupWithKeyFunction(
-        const StringData& ns,
-        const StringData& jsreduce,
+        StringData,
+        StringData,
         std::vector<BSONObj>* output,
         const BSONObj& initial,
         const Query& query,
-        const StringData& jskey,
-        const StringData& finalize
+        StringData,
+        StringData
     ) {
         BSONObjBuilder groupBuilder;
         _buildGroupObj(ns, jsreduce, initial, query, finalize, &groupBuilder);
@@ -1152,11 +1152,11 @@ namespace mongo {
     }
 
     void DBClientWithCommands::_buildGroupObj(
-        const StringData& ns,
-        const StringData& jsreduce,
+        StringData,
+        StringData,
         const BSONObj& initial,
         const Query& query,
-        const StringData& finalize,
+        StringData,
         BSONObjBuilder* groupObj
     ) {
         groupObj->append("ns", nsGetCollection(ns.toString()));
@@ -1170,7 +1170,7 @@ namespace mongo {
     }
 
     void DBClientWithCommands::_runGroup(
-        const StringData& ns,
+        StringData,
         const BSONObj& group,
         const Query& query,
         std::vector<BSONObj>* output
@@ -1196,8 +1196,8 @@ namespace mongo {
     }
 
     BSONObj DBClientWithCommands::distinct(
-        const StringData& ns,
-        const StringData& field,
+        StringData,
+        StringData,
         const Query& query
     ) {
         BSONObjBuilder commandBuilder;
@@ -1218,7 +1218,7 @@ namespace mongo {
     }
 
     void DBClientWithCommands::_findAndModify(
-        const StringData& ns,
+        StringData,
         const BSONObj& query,
         const BSONObj& update,
         const BSONObj& sort,
@@ -1258,7 +1258,7 @@ namespace mongo {
     }
 
     BSONObj DBClientWithCommands::findAndModify(
-        const StringData& ns,
+        StringData,
         const BSONObj& query,
         const BSONObj& update,
         bool upsert,
@@ -1272,7 +1272,7 @@ namespace mongo {
     }
 
     BSONObj DBClientWithCommands::findAndRemove(
-        const StringData& ns,
+        StringData,
         const BSONObj& query,
         const BSONObj& sort,
         const BSONObj& fields
@@ -1426,7 +1426,7 @@ namespace mongo {
         return v.empty() ? BSONObj() : v[0];
     }
 
-    void DBClientInterface::save( const StringData& ns, const BSONObj& toSave, const WriteConcern* wc ) {
+    void DBClientInterface::save( StringData, const BSONObj& toSave, const WriteConcern* wc ) {
         if (!toSave.hasField("_id"))
             insert(ns.rawData(), toSave, 0, wc);
         else
@@ -1602,7 +1602,7 @@ namespace mongo {
     }
 
     void DBClientBase::parallelScan(
-        const StringData& ns,
+        StringData,
         int numCursors,
         std::vector<DBClientCursor*>* cursors,
         stdx::function<DBClientBase* ()> connectionFactory
@@ -2024,7 +2024,7 @@ namespace mongo {
         return ss.str();
     }
 
-    void DBClientWithCommands::createIndex(const StringData& ns, const IndexSpec& descriptor) {
+    void DBClientWithCommands::createIndex(StringData, const IndexSpec& descriptor) {
 
         const BSONObj descriptorObj = descriptor.toBSON();
 

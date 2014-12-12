@@ -32,7 +32,7 @@
 
 namespace mongo {
 
-    StatusWith<HostAndPort> HostAndPort::parse(const StringData& text) {
+    StatusWith<HostAndPort> HostAndPort::parse(StringData) {
         HostAndPort result;
         Status status = result.initialize(text);
         if (!status.isOK()) {
@@ -43,7 +43,7 @@ namespace mongo {
 
     HostAndPort::HostAndPort() : _port(-1) {}
 
-    HostAndPort::HostAndPort(const StringData& text) {
+    HostAndPort::HostAndPort(StringData) {
         uassertStatusOK(initialize(text));
     }
 
@@ -96,7 +96,7 @@ namespace mongo {
         return _host.empty() && _port < 0;
     }
 
-    Status HostAndPort::initialize(const StringData& s) {
+    Status HostAndPort::initialize(StringData) {
         size_t colonPos = s.rfind(':');
         StringData hostPart = s.substr(0, colonPos);
 

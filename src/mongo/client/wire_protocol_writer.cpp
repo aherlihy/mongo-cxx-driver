@@ -27,7 +27,7 @@ namespace mongo {
     }
 
     void WireProtocolWriter::write(
-        const StringData& ns,
+        StringData,
         const std::vector<WriteOperation*>& write_operations,
         bool ordered,
         const WriteConcern* writeConcern,
@@ -121,7 +121,7 @@ namespace mongo {
         WriteOpType opCode,
         const BufBuilder& builder,
         const WriteConcern* writeConcern,
-        const StringData& ns
+        StringData
     ) {
         Message request;
         request.setData(opCode, builder.buf(), builder.len());

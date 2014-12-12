@@ -53,8 +53,8 @@ namespace mongo {
     }
 
     void assertCmp( int expected,
-                    const StringData& s1,
-                    const StringData& s2,
+                    StringData,
+                    StringData,
                     bool lexOnly = false ) {
         mongo::LexNumCmp cmp( lexOnly );
         ASSERT_EQUALS( expected, cmp.cmp( s1, s2, lexOnly ) );

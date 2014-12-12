@@ -21,7 +21,7 @@
 namespace mongo {
 
     Status bsonExtractField(const BSONObj& object,
-                            const StringData& fieldName,
+                            StringData,
                             BSONElement* outElement) {
         BSONElement element = object.getField(fieldName);
         if (element.eoo())
@@ -33,7 +33,7 @@ namespace mongo {
     }
 
     Status bsonExtractTypedField(const BSONObj& object,
-                                 const StringData& fieldName,
+                                 StringData,
                                  BSONType type,
                                  BSONElement* outElement) {
         Status status = bsonExtractField(object, fieldName, outElement);
@@ -49,7 +49,7 @@ namespace mongo {
     }
 
     Status bsonExtractBooleanField(const BSONObj& object,
-                                   const StringData& fieldName,
+                                   StringData,
                                    bool* out) {
         BSONElement element;
         Status status = bsonExtractTypedField(object, fieldName, Bool, &element);
@@ -60,7 +60,7 @@ namespace mongo {
     }
 
     Status bsonExtractBooleanFieldWithDefault(const BSONObj& object,
-                                              const StringData& fieldName,
+                                              StringData,
                                               bool defaultValue,
                                               bool* out) {
         BSONElement value;
@@ -84,7 +84,7 @@ namespace mongo {
     }
 
     Status bsonExtractStringField(const BSONObj& object,
-                                  const StringData& fieldName,
+                                  StringData,
                                   std::string* out) {
         BSONElement element;
         Status status = bsonExtractTypedField(object, fieldName, String, &element);
@@ -95,7 +95,7 @@ namespace mongo {
     }
 
     Status bsonExtractOIDField(const BSONObj& object,
-                               const StringData& fieldName,
+                               StringData,
                                OID* out) {
         BSONElement element;
         Status status = bsonExtractTypedField(object, fieldName, jstOID, &element);
@@ -106,7 +106,7 @@ namespace mongo {
     }
 
     Status bsonExtractOIDFieldWithDefault(const BSONObj& object,
-                                          const StringData& fieldName,
+                                          StringData,
                                           const OID& defaultValue,
                                           OID* out) {
         Status status = bsonExtractOIDField(object, fieldName, out);
@@ -120,8 +120,8 @@ namespace mongo {
     }
 
     Status bsonExtractStringFieldWithDefault(const BSONObj& object,
-                                             const StringData& fieldName,
-                                             const StringData& defaultValue,
+                                             StringData,
+                                             StringData,
                                              std::string* out) {
         Status status = bsonExtractStringField(object, fieldName, out);
         if (status == ErrorCodes::NoSuchKey) {
@@ -134,7 +134,7 @@ namespace mongo {
     }
 
     Status bsonExtractIntegerField(const BSONObj& object,
-                                   const StringData& fieldName,
+                                   StringData,
                                    long long* out) {
         BSONElement value;
         Status status = bsonExtractField(object, fieldName, &value);
@@ -157,7 +157,7 @@ namespace mongo {
     }
 
     Status bsonExtractIntegerFieldWithDefault(const BSONObj& object,
-                                              const StringData& fieldName,
+                                              StringData,
                                               long long defaultValue,
                                               long long* out) {
         Status status = bsonExtractIntegerField(object, fieldName, out);

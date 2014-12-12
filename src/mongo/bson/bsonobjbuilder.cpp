@@ -27,7 +27,7 @@ namespace mongo {
     using std::numeric_limits;
     using std::string;
 
-    void BSONObjBuilder::appendMinForType( const StringData& fieldName , int t ) {
+    void BSONObjBuilder::appendMinForType( StringData , int t ) {
         switch ( t ) {
                 
         // Shared canonical types
@@ -85,7 +85,7 @@ namespace mongo {
         uassert( 10061 ,  "type not supported for appendMinElementForType" , false );
     }
 
-    void BSONObjBuilder::appendMaxForType( const StringData& fieldName , int t ) {
+    void BSONObjBuilder::appendMaxForType( StringData , int t ) {
         switch ( t ) {
                 
         // Shared canonical types
@@ -140,7 +140,7 @@ namespace mongo {
         uassert( 14853 ,  "type not supported for appendMaxElementForType" , false );
     }
 
-    bool BSONObjBuilder::appendAsNumber( const StringData& fieldName , const string& data ) {
+    bool BSONObjBuilder::appendAsNumber( StringData , const string& data ) {
         if ( data.size() == 0 || data == "-" || data == ".")
             return false;
 
@@ -185,7 +185,7 @@ namespace mongo {
         }
     }
 
-    BSONObjBuilder& BSONObjBuilder::appendDate(const StringData& fieldName, Date_t dt) {
+    BSONObjBuilder& BSONObjBuilder::appendDate(StringData, Date_t dt) {
         /* easy to pass a time_t to this and get a bad result.  thus this warning. */
 #if defined(MONGO_DEBUG_BUILD) && defined(MONGO_EXPOSE_MACROS)
         if( dt > 0 && dt <= 0xffffffff ) {
@@ -246,7 +246,7 @@ namespace mongo {
         return BSONObjIterator( s , e );
     }
 
-    bool BSONObjBuilder::hasField( const StringData& name ) const {
+    bool BSONObjBuilder::hasField( StringData ) const {
         BSONObjIterator i = iterator();
         while ( i.more() )
             if ( name == i.next().fieldName() )

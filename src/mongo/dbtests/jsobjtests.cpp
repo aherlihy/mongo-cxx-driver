@@ -1500,12 +1500,12 @@ namespace JsobjTests {
             }
 
             template<typename T>
-            BSONType objTypeOf(const T& thing) {
+            BSONType objTypeOf(StringData) {
                 return BSON("" << thing).firstElement().type();
             }
 
             template<typename T>
-            BSONType arrTypeOf(const T& thing) {
+            BSONType arrTypeOf(StringData) {
                 return BSON_ARRAY(thing).firstElement().type();
             }
         }; DBTEST_SHIM_TEST(AllTypes);

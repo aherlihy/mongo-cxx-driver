@@ -47,7 +47,7 @@ namespace mongo {
      * substring with any sign characters stripped away.  "*isNegative" is set to true if the
      * number is negative, and false otherwise.
      */
-    static inline StringData _extractSign(const StringData& stringValue, bool* isNegative) {
+    static inline StringData _extractSign(StringData, bool* isNegative) {
         if (stringValue.empty()) {
             *isNegative = false;
             return stringValue;
@@ -84,7 +84,7 @@ namespace mongo {
      * "0x" or "0X" prefix, if present.
      */
     static inline StringData _extractBase(
-            const StringData& stringValue, int inputBase, int* outputBase) {
+            StringData, int inputBase, int* outputBase) {
 
         const StringData hexPrefixLower("0x", StringData::LiteralTag());
         const StringData hexPrefixUpper("0X", StringData::LiteralTag());
@@ -113,7 +113,7 @@ namespace mongo {
 
     template <typename NumberType>
     Status parseNumberFromStringWithBase(
-            const StringData& stringValue, int base, NumberType* result) {
+            StringData, int base, NumberType* result) {
 
         typedef ::std::numeric_limits<NumberType> limits;
 
@@ -214,7 +214,7 @@ namespace {
 #endif  // defined(_WIN32)
 
     template <>
-    Status parseNumberFromStringWithBase<double>(const StringData& stringValue,
+    Status parseNumberFromStringWithBase<double>(StringData,
                                                  int base,
                                                  double* result) {
         if (base != 0) {

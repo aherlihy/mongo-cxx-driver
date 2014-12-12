@@ -410,7 +410,7 @@ namespace mongo {
         return b.obj();
     }
 
-    BSONObj BSONElement::wrap( const StringData& newName ) const {
+    BSONObj BSONElement::wrap( StringData ) const {
         BSONObjBuilder b(size() + 6 + newName.size());
         b.appendAs(*this,newName);
         return b.obj();
