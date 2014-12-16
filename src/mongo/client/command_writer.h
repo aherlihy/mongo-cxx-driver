@@ -26,7 +26,7 @@ namespace mongo {
         explicit CommandWriter(DBClientBase* client);
 
         virtual void write(
-            const StringData& ns,
+            StringData ns,
             const std::vector<WriteOperation*>& write_operations,
             bool ordered,
             const WriteConcern* writeConcern,
@@ -43,7 +43,7 @@ namespace mongo {
         BSONObj _send(
             BSONObjBuilder* command,
             const WriteConcern* writeConcern,
-            const StringData& ns
+            StringData ns
         );
 
         bool _fits(BSONArrayBuilder* builder, WriteOperation* operation);

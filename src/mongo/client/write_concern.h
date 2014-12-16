@@ -108,7 +108,7 @@ namespace mongo {
         WriteConcern& nodes(int w);
 
         /** Sets the type of nodes required for write to be successful. */
-        WriteConcern& mode(const StringData& w);
+        WriteConcern& mode(StringData w);
 
         /** Sets whether journal is required for write to be successful. */
         WriteConcern& journal(bool j);

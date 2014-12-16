@@ -642,7 +642,7 @@ namespace mongo {
          * @param toSave The document to save.
          * @param wc The write concern for this operation.
          */
-        void save(const StringData& ns, const BSONObj& toSave, const WriteConcern* wc = NULL);
+        void save(StringData ns, const BSONObj& toSave, const WriteConcern* wc = NULL);
 
         virtual std::string getServerAddress() const = 0;
 
@@ -974,13 +974,13 @@ namespace mongo {
          * returning the final values in the output vector.
          */
         void group(
-            const StringData& ns,
-            const StringData& jsreduce,
+            StringData ns,
+            StringData jsreduce,
             std::vector<BSONObj>* output,
             const BSONObj& initial = BSONObj(),
             const Query& query = Query(),
             const BSONObj& key = BSONObj(),
-            const StringData& finalize = ""
+            StringData finalize = ""
         );
 
         /**
@@ -991,13 +991,13 @@ namespace mongo {
          * @see DBClientWithCommands::group
          */
         void groupWithKeyFunction(
-            const StringData& ns,
-            const StringData& jsreduce,
+            StringData ns,
+            StringData jsreduce,
             std::vector<BSONObj>* output,
             const BSONObj& initial = BSONObj(),
             const Query& query = Query(),
-            const StringData& jskey = "",
-            const StringData& finalize = ""
+            StringData jskey = "",
+            StringData finalize = ""
         );
 
         /**
@@ -1011,8 +1011,8 @@ namespace mongo {
          * distinct values.
          */
         BSONObj distinct(
-            const StringData& ns,
-            const StringData& field,
+            StringData ns,
+            StringData field,
             const Query& query = Query()
         );
 
@@ -1030,7 +1030,7 @@ namespace mongo {
          * @param fields Fields to return. Specifies inclusion with 1, "{<field1>: 1, ...}"
          */
         BSONObj findAndModify(
-            const StringData& ns,
+            StringData ns,
             const BSONObj& query,
             const BSONObj& update,
             bool upsert = false,
@@ -1050,7 +1050,7 @@ namespace mongo {
          * @param fields Fields to return. Specifies inclusion with 1, "{<field1>: 1, ...}"
          */
         BSONObj findAndRemove(
-            const StringData& ns,
+            StringData ns,
             const BSONObj& query,
             const BSONObj& sort = BSONObj(),
             const BSONObj& fields = BSONObj()
@@ -1142,7 +1142,7 @@ namespace mongo {
          *  @param keys Document describing keys and index types. You must provide at least one
          * field and its direction.
          */
-        void createIndex( const StringData& ns, const BSONObj& keys ) {
+        void createIndex( StringData ns, const BSONObj& keys ) {
             return createIndex( ns, IndexSpec().addKeys(keys) );
         }
 
@@ -1154,7 +1154,7 @@ namespace mongo {
          *  @param descriptor Configuration object describing the index to create. The
          *  descriptor must describe at least one key and index type.
          */
-        virtual void createIndex( const StringData& ns, const IndexSpec& descriptor );
+        virtual void createIndex( StringData ns, const IndexSpec& descriptor );
 
         virtual std::list<BSONObj> getIndexSpecs( const std::string &ns, int options = 0 );
 
@@ -1260,23 +1260,23 @@ namespace mongo {
         bool _haveCachedAvailableOptions;
 
         void _buildGroupObj(
-            const StringData& ns,
-            const StringData& jsreduce,
+            StringData ns,
+            StringData jsreduce,
             const BSONObj& initial,
             const Query& query,
-            const StringData& finalize,
+            StringData finalize,
             BSONObjBuilder* groupObj
         );
 
         void _runGroup(
-            const StringData& ns,
+            StringData ns,
             const BSONObj& group,
             const Query& query,
             std::vector<BSONObj>* output
         );
 
         void _findAndModify(
-            const StringData& ns,
+            StringData ns,
             const BSONObj& query,
             const BSONObj& update,
             const BSONObj& sort,
@@ -1373,7 +1373,7 @@ namespace mongo {
          *  may be bound (if required) using std::bind. See the example listed above for more info.
          */
         virtual void parallelScan(
-            const StringData& ns,
+            StringData ns,
             int numCursors,
             std::vector<DBClientCursor*>* cursors,
             stdx::function<DBClientBase* ()> connectionFactory

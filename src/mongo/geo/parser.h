@@ -47,7 +47,7 @@ namespace geo {
         static GeoObj<TCoordinates>* parse(const BSONObj& bson);
 
     private:
-        static GeoObjType stringToType(const StringData& typeStr);
+        static GeoObjType stringToType(StringData typeStr);
     };
 
 } // namespace geo

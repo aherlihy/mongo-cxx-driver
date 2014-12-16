@@ -322,7 +322,7 @@ namespace mongo {
         StringBuilderImpl& operator<<(const char* str) {
             return *this << StringData(str);
         }
-        StringBuilderImpl& operator<<(const StringData& str) {
+        StringBuilderImpl& operator<<(StringData str) {
             append(str);
             return *this;
         }
@@ -342,7 +342,7 @@ namespace mongo {
 
         void write( const char* buf, int len) { memcpy( _buf.grow( len ) , buf , len ); }
 
-        void append( const StringData& str ) { str.copyTo( _buf.grow( str.size() ), false ); }
+        void append( StringData str ) { str.copyTo( _buf.grow( str.size() ), false ); }
 
         void reset( int maxSize = 0 ) { _buf.reset( maxSize ); }
 

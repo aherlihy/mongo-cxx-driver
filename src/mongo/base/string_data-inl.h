@@ -21,7 +21,7 @@
 
 namespace mongo {
 
-    inline int StringData::compare(const StringData& other) const {
+    inline int StringData::compare(StringData other) const {
         // Sizes might not have been computed yet.
         size();
         other.size();
@@ -38,7 +38,7 @@ namespace mongo {
         }
     }
 
-    inline bool StringData::equalCaseInsensitive( const StringData& other ) const {
+    inline bool StringData::equalCaseInsensitive( StringData other ) const {
         if ( other.size() != size() )
             return false;
 
@@ -71,7 +71,7 @@ namespace mongo {
         return static_cast<size_t>( static_cast<const char*>(x) - _data );
     }
 
-    inline size_t StringData::find( const StringData& needle ) const {
+    inline size_t StringData::find( StringData needle ) const {
         size_t mx = size();
         size_t needleSize = needle.size();
 
@@ -113,12 +113,12 @@ namespace mongo {
         return StringData( _data + pos, n );
     }
 
-    inline bool StringData::startsWith( const StringData& prefix ) const {
+    inline bool StringData::startsWith( StringData prefix ) const {
         // TODO: Investigate an optimized implementation.
         return substr(0, prefix.size()) == prefix;
     }
 
-    inline bool StringData::endsWith( const StringData& suffix ) const {
+    inline bool StringData::endsWith( StringData suffix ) const {
         // TODO: Investigate an optimized implementation.
         const size_t thisSize = size();
         const size_t suffixSize = suffix.size();

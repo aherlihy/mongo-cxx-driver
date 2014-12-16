@@ -147,7 +147,7 @@ namespace mongo {
 
         void _check(bool throwSoftErrors);
         void _setModified(const BSONObj& result);
-        int _getIntOrDefault(const BSONObj& obj, const StringData& field, const int defaultValue = 0);
+        int _getIntOrDefault(const BSONObj& obj, StringData field, const int defaultValue = 0);
 
         int _createUpserts(const BSONElement& upsert, const std::vector<WriteOperation*>& ops);
         void _createUpsert(const BSONElement& upsert, const std::vector<WriteOperation*>& ops);

@@ -26,7 +26,7 @@ namespace mongo {
         explicit WireProtocolWriter(DBClientBase* client);
 
         virtual void write(
-            const StringData& ns,
+            StringData ns,
             const std::vector<WriteOperation*>& write_operations,
             bool ordered,
             const WriteConcern* writeConcern,
@@ -38,7 +38,7 @@ namespace mongo {
             WriteOpType opCode,
             const BufBuilder& builder,
             const WriteConcern* wc,
-            const StringData& ns
+            StringData ns
         );
 
         bool _batchableRequest(WriteOpType opCode, const WriteResult* const writeResult);

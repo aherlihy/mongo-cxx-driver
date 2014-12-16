@@ -43,10 +43,10 @@ namespace mongo {
      * See parse_number.cpp for the available instantiations, and add any new instantiations there.
      */
     template <typename NumberType>
-    MONGO_CLIENT_API Status MONGO_CLIENT_FUNC parseNumberFromStringWithBase(const StringData& stringValue, int base, NumberType* result);
+    MONGO_CLIENT_API Status MONGO_CLIENT_FUNC parseNumberFromStringWithBase(StringData stringValue, int base, NumberType* result);
 
     template <typename NumberType>
-    static Status parseNumberFromString(const StringData& stringValue, NumberType* result) {
+    static Status parseNumberFromString(StringData stringValue, NumberType* result) {
         return parseNumberFromStringWithBase(stringValue, 0, result);
     }
 

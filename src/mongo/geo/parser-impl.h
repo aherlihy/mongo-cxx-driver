@@ -61,7 +61,7 @@ namespace geo {
     }
 
     template<typename TCoordinates>
-    GeoObjType Parser<TCoordinates>::stringToType(const StringData& typeStr) {
+    GeoObjType Parser<TCoordinates>::stringToType(StringData typeStr) {
         if (typeStr == kPointTypeStr)
             return GeoObjType_Point;
         if (typeStr == kLineStringTypeStr)

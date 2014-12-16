@@ -57,11 +57,11 @@ namespace geo {
         virtual GeoObjType getType() const = 0;
 
     protected:
-        static BSONObj validateType(const BSONObj& bson, const StringData& typeStr);
+        static BSONObj validateType(const BSONObj& bson, StringData typeStr);
     };
 
     template<typename TCoordinates>
-    BSONObj GeoObj<TCoordinates>::validateType(const BSONObj& bson, const StringData& typeStr) {
+    BSONObj GeoObj<TCoordinates>::validateType(const BSONObj& bson, StringData typeStr) {
         BSONElement typeField = bson.getField(kTypeFieldName);
         uassert(0, "bson must be a valid " + typeStr.toString() + " type",
                 !typeField.eoo() &&

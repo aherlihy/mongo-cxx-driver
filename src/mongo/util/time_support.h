@@ -95,7 +95,7 @@ namespace mongo {
      *
      * Local times are currently not supported.
      */
-    MONGO_CLIENT_API StatusWith<Date_t> MONGO_CLIENT_FUNC dateFromISOString(const StringData& dateString);
+    MONGO_CLIENT_API StatusWith<Date_t> MONGO_CLIENT_FUNC dateFromISOString(StringData dateString);
 
     /**
      * Like dateToISOStringUTC, except outputs to a std::ostream.

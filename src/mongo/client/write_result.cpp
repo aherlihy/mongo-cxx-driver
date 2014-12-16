@@ -228,7 +228,7 @@ namespace mongo {
             _hasModifiedCount = false;
     }
 
-    int WriteResult::_getIntOrDefault(const BSONObj& obj, const StringData& field, const int defaultValue) {
+    int WriteResult::_getIntOrDefault(const BSONObj& obj, StringData field, const int defaultValue) {
         return obj.hasField(field) ? obj.getIntField(field) : defaultValue;
     }
 

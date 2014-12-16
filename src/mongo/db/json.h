@@ -56,7 +56,7 @@ namespace mongo {
      *
      * @param obj The JSON string to test.
      */
-    MONGO_CLIENT_API bool isArray(const StringData& str);
+    MONGO_CLIENT_API bool isArray(StringData str);
 
     /**
      * Convert a BSONArray to a JSON string.
@@ -91,7 +91,7 @@ namespace mongo {
      */
     class JParse {
         public:
-            explicit JParse(const StringData& str);
+            explicit JParse(StringData str);
 
             /*
              * Notation: All-uppercase symbols denote non-terminals; all other
@@ -125,7 +125,7 @@ namespace mongo {
              *   | new CONSTRUCTOR
              */
         private:
-            Status value(const StringData& fieldName, BSONObjBuilder&);
+            Status value(StringData fieldName, BSONObjBuilder&);
 
             /*
              * OBJECT :
@@ -154,7 +154,7 @@ namespace mongo {
              *
              */
         public:
-            Status object(const StringData& fieldName, BSONObjBuilder&, bool subObj=true);
+            Status object(StringData fieldName, BSONObjBuilder&, bool subObj=true);
             Status parse(BSONObjBuilder& builder);
             bool isArray();
 
@@ -166,7 +166,7 @@ namespace mongo {
              * OIDOBJECT :
              *     { FIELD("$oid") : <24 character hex string> }
              */
-            Status objectIdObject(const StringData& fieldName, BSONObjBuilder&);
+            Status objectIdObject(StringData fieldName, BSONObjBuilder&);
 
             /*
              * BINARYOBJECT :
@@ -174,13 +174,13 @@ namespace mongo {
              *          FIELD("$type") : <hexadecimal representation of a single byte
              *              indicating the data type> }
              */
-            Status binaryObject(const StringData& fieldName, BSONObjBuilder&);
+            Status binaryObject(StringData fieldName, BSONObjBuilder&);
 
             /*
              * DATEOBJECT :
              *     { FIELD("$date") : <64 bit signed integer for milliseconds since epoch> }
              */
-            Status dateObject(const StringData& fieldName, BSONObjBuilder&);
+            Status dateObject(StringData fieldName, BSONObjBuilder&);
 
             /*
              * TIMESTAMPOBJECT :
@@ -188,7 +188,7 @@ namespace mongo {
              *         FIELD("t") : <32 bit unsigned integer for seconds since epoch>,
              *         FIELD("i") : <32 bit unsigned integer for the increment> } }
              */
-            Status timestampObject(const StringData& fieldName, BSONObjBuilder&);
+            Status timestampObject(StringData fieldName, BSONObjBuilder&);
 
             /*
              *     NOTE: the rules for the body of the regex are different here,
@@ -198,7 +198,7 @@ namespace mongo {
              *   | { FIELD("$regex") : <string representing body of regex>,
              *          FIELD("$options") : <string representing regex options> }
              */
-            Status regexObject(const StringData& fieldName, BSONObjBuilder&);
+            Status regexObject(StringData fieldName, BSONObjBuilder&);
 
             /*
              * REFOBJECT :
@@ -207,31 +207,31 @@ namespace mongo {
              *   | { FIELD("$ref") : STRING , FIELD("$id") : OBJECTID }
              *   | { FIELD("$ref") : STRING , FIELD("$id") : OIDOBJECT }
              */
-            Status dbRefObject(const StringData& fieldName, BSONObjBuilder&);
+            Status dbRefObject(StringData fieldName, BSONObjBuilder&);
 
             /*
              * UNDEFINEDOBJECT :
              *     { FIELD("$undefined") : true }
              */
-            Status undefinedObject(const StringData& fieldName, BSONObjBuilder&);
+            Status undefinedObject(StringData fieldName, BSONObjBuilder&);
 
             /*
              * NUMBERLONGOBJECT :
              *     { FIELD("$numberLong") : "<number>" }
              */
-            Status numberLongObject(const StringData& fieldName, BSONObjBuilder&);
+            Status numberLongObject(StringData fieldName, BSONObjBuilder&);
 
             /*
              * MINKEYOBJECT :
              *     { FIELD("$minKey") : 1 }
              */
-            Status minKeyObject(const StringData& fieldName, BSONObjBuilder& builder);
+            Status minKeyObject(StringData fieldName, BSONObjBuilder& builder);
 
             /*
              * MAXKEYOBJECT :
              *     { FIELD("$maxKey") : 1 }
              */
-            Status maxKeyObject(const StringData& fieldName, BSONObjBuilder& builder);
+            Status maxKeyObject(StringData fieldName, BSONObjBuilder& builder);
 
             /*
              * ARRAY :
@@ -242,14 +242,14 @@ namespace mongo {
              *     VALUE
              *   | VALUE , ELEMENTS
              */
-            Status array(const StringData& fieldName, BSONObjBuilder&, bool subObj=true);
+            Status array(StringData fieldName, BSONObjBuilder&, bool subObj=true);
 
             /*
              * NOTE: Currently only Date can be preceded by the "new" keyword
              * CONSTRUCTOR :
              *     DATE
              */
-            Status constructor(const StringData& fieldName, BSONObjBuilder&);
+            Status constructor(StringData fieldName, BSONObjBuilder&);
 
             /* The following functions only parse the body of the constructor
              * between the parentheses, not including the constructor name */
@@ -257,38 +257,38 @@ namespace mongo {
              * DATE :
              *     Date( <64 bit signed integer for milliseconds since epoch> )
              */
-            Status date(const StringData& fieldName, BSONObjBuilder&);
+            Status date(StringData fieldName, BSONObjBuilder&);
 
             /*
              * TIMESTAMP :
              *     Timestamp( <32 bit unsigned integer for seconds since epoch>,
              *          <32 bit unsigned integer for the increment> )
              */
-            Status timestamp(const StringData& fieldName, BSONObjBuilder&);
+            Status timestamp(StringData fieldName, BSONObjBuilder&);
 
             /*
              * OBJECTID :
              *     ObjectId( <24 character hex string> )
              */
-            Status objectId(const StringData& fieldName, BSONObjBuilder&);
+            Status objectId(StringData fieldName, BSONObjBuilder&);
 
             /*
              * NUMBERLONG :
              *     NumberLong( <number> )
              */
-            Status numberLong(const StringData& fieldName, BSONObjBuilder&);
+            Status numberLong(StringData fieldName, BSONObjBuilder&);
 
             /*
              * NUMBERINT :
              *     NumberInt( <number> )
              */
-            Status numberInt(const StringData& fieldName, BSONObjBuilder&);
+            Status numberInt(StringData fieldName, BSONObjBuilder&);
 
             /*
              * DBREF :
              *     Dbref( <namespace string> , <24 character hex string> )
              */
-            Status dbRef(const StringData& fieldName, BSONObjBuilder&);
+            Status dbRef(StringData fieldName, BSONObjBuilder&);
 
             /*
              * REGEX :
@@ -320,10 +320,10 @@ namespace mongo {
              * REGEXOPTION :
              *     g | i | m | s
              */
-            Status regex(const StringData& fieldName, BSONObjBuilder&);
+            Status regex(StringData fieldName, BSONObjBuilder&);
             Status regexPat(std::string* result);
             Status regexOpt(std::string* result);
-            Status regexOptCheck(const StringData& opt);
+            Status regexOptCheck(StringData opt);
 
             /*
              * NUMBER :
@@ -336,7 +336,7 @@ namespace mongo {
              * Timestamp - strtoul for both timestamp and increment and '-'
              * before a number explicity disallowed
              */
-            Status number(const StringData& fieldName, BSONObjBuilder&);
+            Status number(StringData fieldName, BSONObjBuilder&);
 
             /*
              * FIELD :
@@ -430,7 +430,7 @@ namespace mongo {
              * @return true if the next field in our stream matches field.
              * Handles single quoted, double quoted, and unquoted field names
              */
-            bool readField(const StringData& field);
+            bool readField(StringData field);
 
             /**
              * @return true if matchChar is in matchSet
@@ -441,19 +441,19 @@ namespace mongo {
             /**
              * @return true if every character in the string is a hex digit
              */
-            bool isHexString(const StringData&) const;
+            bool isHexString(StringData) const;
 
             /**
              * @return true if every character in the string is a valid base64
              * character
              */
-            bool isBase64String(const StringData&) const;
+            bool isBase64String(StringData) const;
 
             /**
              * @return FailedToParse status with the given message and some
              * additional context information
              */
-            Status parseError(const StringData& msg);
+            Status parseError(StringData msg);
         public:
             inline int offset() { return (_input - _buf); }
 

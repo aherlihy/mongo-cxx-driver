@@ -24,7 +24,7 @@ namespace mongo {
 
     SaslClientSession::~SaslClientSession() {}
 
-    void SaslClientSession::setParameter(Parameter id, const StringData& value) {
+    void SaslClientSession::setParameter(Parameter id, StringData value) {
         fassert(16807, id >= 0 && id < numParameters);
         DataBuffer& buffer = _parameters[id];
         buffer.size = value.size();

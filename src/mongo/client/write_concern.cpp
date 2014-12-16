@@ -83,7 +83,7 @@ namespace mongo {
         return *this;
     }
 
-    WriteConcern& WriteConcern::mode(const StringData& w) {
+    WriteConcern& WriteConcern::mode(StringData w) {
         _w_str = w.toString();
         _enabled.set(kWStr);
         _enabled.reset(kW);

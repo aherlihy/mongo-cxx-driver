@@ -30,7 +30,7 @@ namespace mongo {
     }
 
     void CommandWriter::write(
-        const StringData& ns,
+        StringData ns,
         const std::vector<WriteOperation*>& write_operations,
         bool ordered,
         const WriteConcern* writeConcern,
@@ -135,7 +135,7 @@ namespace mongo {
     BSONObj CommandWriter::_send(
         BSONObjBuilder* command,
         const WriteConcern* writeConcern,
-        const StringData& ns
+        StringData ns
     ) {
         command->append("writeConcern", writeConcern->obj());
 

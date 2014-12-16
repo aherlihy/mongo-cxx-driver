@@ -52,7 +52,7 @@ namespace mongo {
     IndexSpec::IndexSpec()
         : _dynamicName(true) {}
 
-    IndexSpec& IndexSpec::addKey(const StringData& field, IndexType type) {
+    IndexSpec& IndexSpec::addKey(StringData field, IndexType type) {
         uassert(0, kDuplicateKey, !_keys.asTempObj().hasField(field));
         if (type <= kIndexTypeDescending)
             _keys.append(field, kIndexTypeNumbers[type]);
@@ -96,7 +96,7 @@ namespace mongo {
         return *this;
     }
 
-    IndexSpec& IndexSpec::name(const StringData& value) {
+    IndexSpec& IndexSpec::name(StringData value) {
         _name = value.toString();
         _dynamicName = false;
         return *this;
@@ -136,13 +136,13 @@ namespace mongo {
         return *this;
     }
 
-    IndexSpec& IndexSpec::textDefaultLanguage(const StringData& value) {
+    IndexSpec& IndexSpec::textDefaultLanguage(StringData value) {
         uassert(0, kDuplicateOption, !_options.asTempObj().hasField("default_language"));
         _options.append("default_language", value);
         return *this;
     }
 
-    IndexSpec& IndexSpec::textLanguageOverride(const StringData& value) {
+    IndexSpec& IndexSpec::textLanguageOverride(StringData value) {
         uassert(0, kDuplicateOption, !_options.asTempObj().hasField("language_override"));
         _options.append("language_override", value);
         return *this;
